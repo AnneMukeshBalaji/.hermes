@@ -1,0 +1,34 @@
+❯ sudo du -x /home/luffy/.local --max-depth=2 2>/dev/null | sort -rn | head -30 | awk '{printf "%.1fG\t%s\n", $1/1048576, $2}'
+[sudo] password for luffy: 
+5.1G	/home/luffy/.local
+4.7G	/home/luffy/.local/share
+1.4G	/home/luffy/.local/share/pipx
+1.3G	/home/luffy/.local/share/nvim
+0.9G	/home/luffy/.local/share/uv
+0.7G	/home/luffy/.local/share/claude
+0.4G	/home/luffy/.local/share/pnpm
+0.2G	/home/luffy/.local/bin
+0.1G	/home/luffy/.local/state
+0.1G	/home/luffy/.local/state/spicetify
+0.0G	/home/luffy/.local/share/fonts
+0.0G	/home/luffy/.local/share/GitKrakenCLI
+0.0G	/home/luffy/.local/lib
+0.0G	/home/luffy/.local/lib/python3.14
+0.0G	/home/luffy/.local/share/vim-lsp-settings
+0.0G	/home/luffy/.local/state/nvim
+0.0G	/home/luffy/.local/share/tirith
+0.0G	/home/luffy/.local/state/VSCodium
+0.0G	/home/luffy/.local/state/tirith
+0.0G	/home/luffy/.local/share/tmux
+0.0G	/home/luffy/.local/share/nautilus
+0.0G	/home/luffy/.local/share/gvfs-metadata
+0.0G	/home/luffy/.local/share/sddm
+0.0G	/home/luffy/.local/share/icons
+0.0G	/home/luffy/.local/share/mime
+0.0G	/home/luffy/.local/state/pipx
+0.0G	/home/luffy/.local/share/applications
+0.0G	/home/luffy/.local/share/rofi
+0.0G	/home/luffy/.local/share/qalculate
+0.0G	/home/luffy/.local/share/CMakeTools
+~                                                                                                                                                                                          9s
+❯ 

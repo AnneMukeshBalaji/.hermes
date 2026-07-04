@@ -1,0 +1,17 @@
+[vite] connected from window 04e54b7e-af8c-4f00-a26c-97667e9723b7:67:11
+[vite] new window visibility hidden 04e54b7e-af8c-4f00-a26c-97667e9723b7:63:12
+[vite] new window visibility visible 04e54b7e-af8c-4f00-a26c-97667e9723b7:63:12
+[vite] new window visibility hidden 04e54b7e-af8c-4f00-a26c-97667e9723b7:63:12
+[vite] new window visibility visible 04e54b7e-af8c-4f00-a26c-97667e9723b7:63:12
+[vite] new window visibility hidden 04e54b7e-af8c-4f00-a26c-97667e9723b7:63:12
+[vite] new window visibility visible 04e54b7e-af8c-4f00-a26c-97667e9723b7:63:12
+[vite] new window visibility hidden 04e54b7e-af8c-4f00-a26c-97667e9723b7:63:12
+[vite] new window visibility visible 04e54b7e-af8c-4f00-a26c-97667e9723b7:63:12
+[vite] ping successful 04e54b7e-af8c-4f00-a26c-97667e9723b7:69:12
+[vite] connecting... client:851:9
+[vite] connected. client:955:12
+Uncaught ReferenceError: $RefreshSig$ is not defined
+    <anonymous> http://localhost:5173/src/components/AuthForm.jsx:4
+AuthForm.jsx:4:10
+
+​

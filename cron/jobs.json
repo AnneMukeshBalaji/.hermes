@@ -1,0 +1,45 @@
+{
+  "jobs": [
+    {
+      "id": "26881e7d96f1",
+      "name": "Hourly Study Guide (Sat-Sun)",
+      "prompt": "Run the hourly study guide script to tell the user what to study.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "hourly-study-guide.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 5-23 4,5 7 *",
+        "display": "0 5-23 4,5 7 *"
+      },
+      "schedule_display": "0 5-23 4,5 7 *",
+      "repeat": {
+        "times": null,
+        "completed": 3
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-03T18:52:50.385013+05:30",
+      "next_run_at": "2026-07-04T18:00:00+05:30",
+      "last_run_at": "2026-07-04T17:00:47.818793+05:30",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    }
+  ],
+  "updated_at": "2026-07-04T17:00:47.820990+05:30"
+}

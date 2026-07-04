@@ -1,0 +1,9 @@
+   1 │ • GNOME desktop settings (using  gsettings )
+   2 │   • Hyprland live configuration (using  hyprctl )
+   3 │   • GTK settings files ( ~/.config/gtk-3.0/settings.ini  and  ~/.config/gtk-4.0/setting
+     │ s.ini )
+   4 │   • Xsettings daemon ( ~/.config/xsettingsd/xsettingsd.conf )
+   5 │   • Hyprland startup scripts and environment variables ( ~/.config/hypr/configs/ENVaria
+     │ bles.conf ,  ~/.config/hypr/configs/Startup_Apps.conf , and  ~/.config/hypr/initial-boo
+     │ t.sh )
+   6 │   • X11 Default Icon Theme ( ~/.icons/default/index.theme )

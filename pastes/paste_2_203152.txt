@@ -1,0 +1,21 @@
+ abstract.docx   Requirements_Gathering_Document.docx
+❯ python3 force_replace.py
+Warning: Mac and Windows entries in the 'name' table differ for the
+ Fullname string in the language English (US)
+ Mac String: GoogleSansCodeProportional Nerd Font Propo
+Windows String: GSC Propo Regular
+Warning: Mac and Windows entries in the 'name' table differ for the
+ PostScriptName string in the language English (US)
+ Mac String: GoogleSansCodeProportionalNFP-Regular
+Windows String: GscPropo-Regular
+The glyph named heart is mapped to U+F08D0.
+But its name indicates it should be mapped to U+2665.
+The glyph named heart is mapped to U+F08D0.
+But its name indicates it should be mapped to U+2665.
+Force-replaced parenleft from /home/luffy/.fonts/GoogleSansCodeProportionalNerdFontPropo-Regular.ttf
+Force-replaced parenright from /home/luffy/.fonts/GoogleSansCodeProportionalNerdFontPropo-Regular.ttf
+Force-replaced braceleft from /home/luffy/.fonts/GoogleSansCodeProportionalNerdFontPropo-Regular.ttf
+Force-replaced braceright from /home/luffy/.fonts/GoogleSansCodeProportionalNerdFontPropo-Regular.ttf
+Font generated at /home/luffy/.local/share/fonts/CustomFont.ttf
+~/Desktop/chatApplication main !1 ?2
+❯

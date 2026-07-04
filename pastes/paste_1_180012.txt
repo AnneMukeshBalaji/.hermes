@@ -1,0 +1,7 @@
+❯ sudo userdel ollama
+[sudo] password for luffy: 
+Sorry, try again.
+[sudo] password for luffy: 
+userdel: group ollama not removed because it has other members.
+~                                                                                          7s
+❯ 

@@ -1,0 +1,30 @@
+20:00:42 interrupt fired: msg='hi', children=0, parent._interrupt=True
+20:00:42 ENTER: queued interrupt msg='hi', agent_running=True
+20:03:23 ENTER: queued interrupt msg='hi', agent_running=True
+20:03:23 interrupt fired: msg='hi', children=0, parent._interrupt=True
+20:30:31 interrupt fired: msg='how to use pony tail in hermes', children=0, parent._interrupt=True
+20:30:31 ENTER: queued interrupt msg='how to use pony tail in hermes', agent_running=True
+21:59:21 ENTER: queued interrupt msg="coming to the project let's build a chat application and let", agent_running=True
+21:59:21 interrupt fired: msg="coming to the project let's build a chat application and let", children=0, parent._interrupt=True
+22:03:59 ENTER: queued interrupt msg='ehy', agent_running=True
+22:03:59 interrupt fired: msg='ehy', children=0, parent._interrupt=True
+22:16:19 interrupt fired: msg='is hositonger free', children=0, parent._interrupt=True
+22:16:19 ENTER: queued interrupt msg='is hositonger free', agent_running=True
+22:44:43 interrupt fired: msg='but in some previous chats you have given code for frontend ', children=0, parent._interrupt=True
+22:44:43 ENTER: queued interrupt msg='but in some previous chats you have given code for frontend ', agent_running=True
+22:43:24 interrupt fired: msg='ok now list the tasks that i need to do learn css by watchin', children=0, parent._interrupt=True
+22:43:24 ENTER: queued interrupt msg='ok now list the tasks that i need to do learn css by watchin', agent_running=True
+14:15:36 ENTER: queued interrupt msg='[Pasted text #1: 10 lines → /home/luffy/.hermes/pastes/paste', agent_running=True
+14:15:36 interrupt fired: msg='[Pasted text #1: 10 lines → /home/luffy/.hermes/pastes/paste', children=0, parent._interrupt=True
+22:21:21 interrupt fired: msg='now undo the write operation', children=0, parent._interrupt=True
+22:21:21 ENTER: queued interrupt msg='now undo the write operation', agent_running=True
+15:42:06 interrupt fired: msg="hi hermes let's continue", children=0, parent._interrupt=True
+15:42:06 ENTER: queued interrupt msg="hi hermes let's continue", agent_running=True
+00:44:49 interrupt fired: msg='the font is not rendering bro the custom font', children=0, parent._interrupt=True
+00:44:49 ENTER: queued interrupt msg='the font is not rendering bro the custom font', agent_running=True
+23:59:26 interrupt fired: msg='check the project', children=0, parent._interrupt=True
+23:59:26 ENTER: queued interrupt msg='check the project', agent_running=True
+18:15:06 ENTER: queued interrupt msg='wait', agent_running=True
+18:15:06 interrupt fired: msg='wait', children=0, parent._interrupt=True
+18:15:40 ENTER: queued interrupt msg='see i want kitty config in my alacritty config', agent_running=True
+18:15:40 interrupt fired: msg='see i want kitty config in my alacritty config', children=0, parent._interrupt=True

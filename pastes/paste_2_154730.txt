@@ -1,0 +1,26 @@
+❯ fa                              󰇄 Computer: luffy@Marshall
+
+                                  ╭──────────── * Hardware * ──────────────────────────────────────╮
+                                  │ 󰣇 OS: Arch Linux x86_64
+                                  │ 󰌽 Kernel: Linux 7.0.12-arch1-1
+                                  │ 󰥔 Uptime: 1 hour, 11 mins
+                                  │ 󰏖 Packages: 1064 (pacman)
+                                  │  Shell: zsh 5.9.1
+                                  ╰─────────●──●──●──●──●──●──●──●─────────────────────────────────╯
+
+                                  ╭──────────── * Hardware * ──────────────────────────────────────╮
+                                  │ 󰍹 Resolution: 1920x1080 @ 144Hz
+                                  │  WM: Hyprland 0.55.4 (Wayland)
+                                  │  Terminal: kitty 0.47.1
+                                  │  Font: NotoSansMono-Regular (13pt)
+                                  ╰─────────●──●──●──●──●──●──●──●─────────────────────────────────╯
+
+                                  ╭──────────── * Hardware * ──────────────────────────────────────╮
+                                  │ 󰌢 Host: Katana 15 B13VFK
+                                  │ 󰻠 CPU: 13th Gen Intel(R) Core(TM) i7-13620H (16) @ 4.90 GHz
+                                  │ 󰢮 GPU: Intel UHD Graphics @ 1.50 GHz [Integrated]
+                                  │ 󰍛 Memory: 4.31 GiB / 15.32 GiB (28%)
+                                  │ 󰋊 Disk: 63.76 GiB / 194.82 GiB (33%) - ext4
+                                  ╰─────────●──●──●──●──●──●──●──●─────────────────────────────────╯
+~                                                                                                                                                                                            
+❯ 

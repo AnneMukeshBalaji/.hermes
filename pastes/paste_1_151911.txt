@@ -1,0 +1,24 @@
+app:
+  jwt:
+    secret: "bG9yZC1zaXZhLWlzLXRoZS1raW5nLWhlLXdpbGwtc2F2ZS15b3UtZnJvbS1hbGwta2luZHMtb2YtZGFuZ2Vy"
+    expiration-ms: 86400000
+
+spring:
+  datasource:
+    url: "${DB_URL: jdbc:postgresql://localshot:5432/chat_application}"
+    username: "${DB_USERNAME : luffy}"
+    password: "${DB_PASSWORD : luffy}"
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+server:
+  port: 8080

@@ -1,0 +1,23 @@
+package com.management.usermanagementAPI.dto;
+
+import java.time.LocalDateTime;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import java.util.UUID;
+
+import com.fasterxml.jackson.annotation.JsonAlias;
+@Data
+@AllArgsConstructor
+public class UserResponse {
+  @JsonAlias("user_id")
+  private UUID id;
+  @JsonAlias("user_name")
+  private String userName;
+  @JsonAlias("email")
+  private String email;
+  @JsonAlias("created_at")
+  private LocalDateTime createdAt;
+  @JsonAlias("last_updated_at")
+  private LocalDateTime updatedAt;
+}

@@ -1,0 +1,9 @@
+
+Looks like there’s a problem with this site
+
+The server at localhost:5173 sent back an error: 404 Not Found
+What can you do about it?
+
+    Check to make sure you’ve typed the website address correctly.
+    The site could be temporarily unavailable or too busy. Try again in a few moments.
+

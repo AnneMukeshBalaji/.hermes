@@ -1,0 +1,5 @@
+end/src/main/java/com/chatApplication/backend/security/  2 
+   ├╴󰬷  JwtService.java  1 
+   │ └╴  Cannot invoke getSubject() on the array type byte[] Java (67108980) [39, 24]
+   └╴󰬷  JwtFilterClass.java  1 
+     └╴  The value of the field JwtF

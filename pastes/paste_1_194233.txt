@@ -1,0 +1,73 @@
+sudo pacman -S ollama-cuda%                                                                   ❯ sudo pacman -S ollama-cuda
+[sudo] password for luffy: 
+error: failed to init transaction (unable to lock database)
+error: could not lock database: File exists
+  if you're sure a package manager is not already
+  running, you can remove /var/lib/pacman/db.lck
+❯ sudo rm /var/lib/pacman/db.lck
+    sudo pacman -S ollama-cuda
+resolving dependencies...
+looking for conflicting packages...
+
+Package (6)          New Version                Net Change   Download Size
+
+extra/cccl           3.3.4-1                      15.31 MiB       1.30 MiB
+extra/cuda           13.3.0-1                   4789.36 MiB    2227.95 MiB
+extra/gcc15          15.3.0+r0.g4db0e8df15be-2   178.50 MiB      46.23 MiB
+extra/gcc15-libs     15.3.0+r0.g4db0e8df15be-2     0.87 MiB       0.29 MiB
+extra/opencl-nvidia  610.43.02-2                 103.22 MiB       6.45 MiB
+extra/ollama-cuda    0.30.10-1                  1030.98 MiB     763.39 MiB
+
+Total Download Size:   3045.61 MiB
+Total Installed Size:  6118.23 MiB
+
+:: Proceed with installation? [Y/n] y
+:: Retrieving packages...
+ gcc15-libs-15.3.0+r0.g...   301.3 KiB   585 KiB/s 00:01 [------------------------------] 100%
+ cccl-3.3.4-1-any           1331.8 KiB   984 KiB/s 00:01 [------------------------------] 100%
+ opencl-nvidia-610.43.0...     6.4 MiB  2.20 MiB/s 00:03 [------------------------------] 100%
+ gcc15-15.3.0+r0.g4db0e...    46.2 MiB  1531 KiB/s 00:31 [------------------------------] 100%
+ ollama-cuda-0.30.10-1-x86_64                                                          763.4 MiB  2.15 MiB/s 05:55 [--------------------------------------------------------------------] 100%
+ cuda-13.3.0-1-x86_64                                                                    2.2 GiB  3.24 MiB/s 11:28 [--------------------------------------------------------------------] 100%
+ Total (6/6)                                                                             3.0 GiB  4.42 MiB/s 11:29 [--------------------------------------------------------------------] 100%
+(6/6) checking keys in keyring                                                                                     [--------------------------------------------------------------------] 100%
+(6/6) checking package integrity                                                                                   [--------------------------------------------------------------------] 100%
+(6/6) loading package files                                                                                        [--------------------------------------------------------------------] 100%
+(6/6) checking for file conflicts                                                                                  [--------------------------------------------------------------------] 100%
+(6/6) checking available disk space                                                                                [--------------------------------------------------------------------] 100%
+:: Processing package changes...
+(1/6) installing cccl                                                                                              [--------------------------------------------------------------------] 100%
+(2/6) installing opencl-nvidia                                                                                     [--------------------------------------------------------------------] 100%
+Optional dependencies for opencl-nvidia
+    opencl-headers: headers necessary for OpenCL development
+(3/6) installing gcc15-libs                                                                                        [--------------------------------------------------------------------] 100%
+(4/6) installing gcc15                                                                                             [--------------------------------------------------------------------] 100%
+(5/6) installing cuda                                                                                              [--------------------------------------------------------------------] 100%
+- The cuda binaries are in /opt/cuda/bin/
+- You need to source /etc/profile or restart your session in order for the CUDA
+  binaries to appear in your $PATH
+- The default host compiler for nvcc is set by the $NVCC_CCBIN environment
+  variable in /etc/profile.d/cuda.sh
+- The default host compiler for nvcc is no longer configured using symlinks in
+  /opt/cuda/bin/ but by the $NVCC_CCBIN environment variable in
+  /etc/profile.d/cuda.sh.  You need to source /etc/profile or restart your
+  session for it to be available in your environment.  Additionally, you may
+  need to clear the build cache of your projects where the old path may have
+  been recorded.
+- When you uninstall an old, unrequired version of GCC that was previously
+  required by cuda for the default host compiler ($NVCC_CCBIN), you may need
+  to source /etc/profile or restart your session.  Additionally, you may need
+  to clear the build cache of your projects where the old path may be still
+  recorded.
+Optional dependencies for cuda
+    gdb: for cuda-gdb [installed]
+    glu: required for some profiling tools in CUPTI
+    nvidia-utils: for NVIDIA drivers (not needed in CDI containers) [installed]
+    nsight-compute: for profiling CUDA applications
+    nsight-systems: for system-wide profiling
+    rdma-core: for GPUDirect Storage (libcufile_rdma.so)
+(6/6) installing ollama-cuda                                                                                       [--------------------------------------------------------------------] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+~                                                                                                                                                                                     11m 52s
+❯ 

@@ -1,0 +1,1296 @@
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-29T11:23:44Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    14:34   0:00 [kthreadd]
+root      281916  2.0  0.0      0     0 ?        I<   16:51   0:03  \_ [kworker/u65:3-i915_flip]
+root      211144  0.9  0.0      0     0 ?        I<   16:16   0:22  \_ [kworker/u65:0-rb_allocator]
+root      121238  0.5  0.0      0     0 ?        I<   15:30   0:26  \_ [kworker/u65:2-rb_allocator]
+root      211698  0.2  0.0      0     0 ?        I    16:16   0:06  \_ [kworker/2:0-i915-unordered]
+root         130  0.2  0.0      0     0 ?        S    14:34   0:20  \_ [irq/9-acpi]
+root          16  0.2  0.0      0     0 ?        I    14:34   0:18  \_ [rcu_preempt]
+root      271777  0.1  0.0      0     0 ?        I<   16:46   0:00  \_ [kworker/u65:1-rb_allocator]
+root         540  0.1  0.0      0     0 ?        S    14:34   0:12  \_ [irq/171-iwlwifi:default_queue]
+root          56  0.1  0.0      0     0 ?        S    14:34   0:09  \_ [migration/12]
+root         405  0.1  0.0      0     0 ?        I<   14:34   0:08  \_ [kworker/8:1H-i915_cleanup]
+root         545  0.1  0.0      0     0 ?        S    14:34   0:08  \_ [irq/176-iwlwifi:queue_5]
+root         726  0.0  0.0      0     0 ?        I<   14:34   0:06  \_ [kworker/10:1H-i915_cleanup]
+root          62  0.0  0.0      0     0 ?        S    14:34   0:06  \_ [migration/13]
+root          68  0.0  0.0      0     0 ?        S    14:34   0:05  \_ [migration/14]
+root         543  0.0  0.0      0     0 ?        S    14:34   0:05  \_ [irq/174-iwlwifi:queue_3]
+root         332  0.0  0.0      0     0 ?        S    14:34   0:04  \_ [jbd2/nvme0n1p7-8]
+root         367  0.0  0.0      0     0 ?        I<   14:34   0:04  \_ [kworker/6:1H-i915_cleanup]
+root          74  0.0  0.0      0     0 ?        S    14:34   0:04  \_ [migration/15]
+root         266  0.0  0.0      0     0 ?        I<   14:34   0:03  \_ [kworker/4:1H-i915_cleanup]
+root      215945  0.0  0.0      0     0 ?        I    16:18   0:00  \_ [kworker/u64:5-events_unbound]
+root      203668  0.0  0.0      0     0 ?        I    16:12   0:00  \_ [kworker/u64:2-events_unbound]
+root         388  0.0  0.0      0     0 ?        I<   14:34   0:03  \_ [kworker/12:1H-kblockd]
+root          44  0.0  0.0      0     0 ?        S    14:34   0:02  \_ [migration/8]
+root         295  0.0  0.0      0     0 ?        I<   14:34   0:02  \_ [kworker/2:1H-i915_cleanup]
+root         125  0.0  0.0      0     0 ?        SN   14:34   0:02  \_ [khugepaged]
+root          50  0.0  0.0      0     0 ?        S    14:34   0:02  \_ [migration/10]
+root         347  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/13:1H-i915_cleanup]
+root          26  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [migration/2]
+root         293  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/5:1H-i915_cleanup]
+root          20  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [migration/0]
+root         141  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [kswapd0]
+root         391  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/14:1H-i915_cleanup]
+root          38  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [migration/6]
+root      259770  0.0  0.0      0     0 ?        I    16:39   0:00  \_ [kworker/u64:1-flush-259:0]
+root          32  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [migration/4]
+root      282372  0.0  0.0      0     0 ?        I    16:51   0:00  \_ [kworker/u64:3-events_unbound]
+root         542  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [irq/173-iwlwifi:queue_2]
+root      268885  0.0  0.0      0     0 ?        I    16:44   0:00  \_ [kworker/u64:0-events_power_efficient]
+root         407  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/7:1H-kblockd]
+root         716  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/9:1H-i915_cleanup]
+root      249225  0.0  0.0      0     0 ?        I    16:34   0:00  \_ [kworker/4:2-mm_percpu_wq]
+root         402  0.0  0.0      0     0 ?        I<   14:34   0:00  \_ [kworker/0:1H-i915_cleanup]
+root         294  0.0  0.0      0     0 ?        I<   14:34   0:00  \_ [kworker/15:1H-i915_cleanup]
+root         541  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [irq/172-iwlwifi:queue_1]
+root         550  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [irq/181-iwlwifi:queue_10]
+root         403  0.0  0.0      0     0 ?        I<   14:34   0:00  \_ [kworker/11:1H-kblockd]
+root        1144  0.0  0.0      0     0 ?        I<   14:35   0:00  \_ [kworker/3:1H-i915_cleanup]
+root          81  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [ksoftirqd/1]
+root         715  0.0  0.0      0     0 ?        I<   14:34   0:00  \_ [kworker/1:1H-i915_cleanup]
+root         123  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [kcompactd0]
+root         544  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [irq/175-iwlwifi:queue_4]
+root      281965  0.0  0.0      0     0 ?        I    16:51   0:00  \_ [kworker/0:2-rcu_gp]
+root         147  0.0  0.0      0     0 ?        I    14:34   0:00  \_ [kworker/15:2-mm_percpu_wq]
+root      267162  0.0  0.0      0     0 ?        I    16:43   0:00  \_ [kworker/6:1-events]
+root         551  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [irq/182-iwlwifi:queue_11]
+root          70  0.0  0.0      0     0 ?        I    14:34   0:00  \_ [kworker/14:0-events]
+root          15  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [ksoftirqd/0]
+root      185657  0.0  0.0      0     0 ?        I    16:02   0:00  \_ [kworker/10:2-events]
+--- pstree of self ---
+hermes,280946,luffy -m hermes_cli.main gateway run
+  |-timeout,286409 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 280946 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,286410 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 280946 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,286415 -40
+  |       `-pstree,286414 -plau 280946
+  |-{hermes},281475
+  |-{hermes},281476
+  |-{hermes},281486
+  |-{hermes},281511
+  |-{hermes},281512
+  |-{hermes},282045
+  `-{hermes},282046
+--- /proc/loadavg ---
+1.61 1.97 1.89 2/1259 286416
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-29T11:28:57Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    14:34   0:00 [kthreadd]
+root      281916  1.5  0.0      0     0 ?        I<   16:51   0:07  \_ [kworker/u65:3-i915_flip]
+root      211144  0.9  0.0      0     0 ?        I<   16:16   0:24  \_ [kworker/u65:0-rb_allocator]
+root      121238  0.5  0.0      0     0 ?        I<   15:30   0:26  \_ [kworker/u65:2-rb_allocator]
+root      287595  0.2  0.0      0     0 ?        I    16:54   0:00  \_ [kworker/2:1-i915-unordered]
+root      211698  0.2  0.0      0     0 ?        I    16:16   0:06  \_ [kworker/2:0-i915-unordered]
+root         130  0.2  0.0      0     0 ?        S    14:34   0:20  \_ [irq/9-acpi]
+root          16  0.2  0.0      0     0 ?        I    14:34   0:19  \_ [rcu_preempt]
+root         540  0.1  0.0      0     0 ?        S    14:34   0:12  \_ [irq/171-iwlwifi:default_queue]
+root          56  0.1  0.0      0     0 ?        S    14:34   0:10  \_ [migration/12]
+root         405  0.1  0.0      0     0 ?        I<   14:34   0:09  \_ [kworker/8:1H-i915_cleanup]
+root         545  0.0  0.0      0     0 ?        S    14:34   0:08  \_ [irq/176-iwlwifi:queue_5]
+root         726  0.0  0.0      0     0 ?        I<   14:34   0:07  \_ [kworker/10:1H-i915_cleanup]
+root          62  0.0  0.0      0     0 ?        S    14:34   0:07  \_ [migration/13]
+root      294993  0.0  0.0      0     0 ?        I    16:58   0:00  \_ [kworker/u64:0-events_unbound]
+root          68  0.0  0.0      0     0 ?        S    14:34   0:05  \_ [migration/14]
+root         543  0.0  0.0      0     0 ?        S    14:34   0:05  \_ [irq/174-iwlwifi:queue_3]
+root         367  0.0  0.0      0     0 ?        I<   14:34   0:04  \_ [kworker/6:1H-i915_cleanup]
+root         332  0.0  0.0      0     0 ?        S    14:34   0:04  \_ [jbd2/nvme0n1p7-8]
+root          74  0.0  0.0      0     0 ?        S    14:34   0:04  \_ [migration/15]
+root         266  0.0  0.0      0     0 ?        I<   14:34   0:03  \_ [kworker/4:1H-i915_cleanup]
+root         388  0.0  0.0      0     0 ?        I<   14:34   0:03  \_ [kworker/12:1H-kblockd]
+root      203668  0.0  0.0      0     0 ?        I    16:12   0:00  \_ [kworker/u64:2-events_power_efficient]
+root          44  0.0  0.0      0     0 ?        S    14:34   0:03  \_ [migration/8]
+root         295  0.0  0.0      0     0 ?        I<   14:34   0:02  \_ [kworker/2:1H-i915_cleanup]
+root         125  0.0  0.0      0     0 ?        SN   14:34   0:02  \_ [khugepaged]
+root          50  0.0  0.0      0     0 ?        S    14:34   0:02  \_ [migration/10]
+root      282372  0.0  0.0      0     0 ?        I    16:51   0:00  \_ [kworker/u64:3-events_power_efficient]
+root         347  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/13:1H-i915_cleanup]
+root          26  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [migration/2]
+root      259770  0.0  0.0      0     0 ?        I    16:39   0:00  \_ [kworker/u64:1-events_power_efficient]
+root         293  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/5:1H-i915_cleanup]
+root          20  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [migration/0]
+root         141  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [kswapd0]
+root         391  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/14:1H-i915_cleanup]
+root          38  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [migration/6]
+root          32  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [migration/4]
+root         542  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [irq/173-iwlwifi:queue_2]
+root         407  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/7:1H-i915_cleanup]
+root         716  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/9:1H-i915_cleanup]
+root      249225  0.0  0.0      0     0 ?        I    16:34   0:00  \_ [kworker/4:2-events]
+root         402  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/0:1H-i915_cleanup]
+root         294  0.0  0.0      0     0 ?        I<   14:34   0:00  \_ [kworker/15:1H-i915_cleanup]
+root         541  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [irq/172-iwlwifi:queue_1]
+root         550  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [irq/181-iwlwifi:queue_10]
+root         403  0.0  0.0      0     0 ?        I<   14:34   0:00  \_ [kworker/11:1H-kblockd]
+root          81  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [ksoftirqd/1]
+root        1144  0.0  0.0      0     0 ?        I<   14:35   0:00  \_ [kworker/3:1H-i915_cleanup]
+root         715  0.0  0.0      0     0 ?        I<   14:34   0:00  \_ [kworker/1:1H-i915_cleanup]
+root         123  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [kcompactd0]
+root         544  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [irq/175-iwlwifi:queue_4]
+root         147  0.0  0.0      0     0 ?        I    14:34   0:00  \_ [kworker/15:2-mm_percpu_wq]
+root         551  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [irq/182-iwlwifi:queue_11]
+root          70  0.0  0.0      0     0 ?        I    14:34   0:00  \_ [kworker/14:0-events]
+root          15  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [ksoftirqd/0]
+root         552  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [irq/183-iwlwifi:queue_12]
+root      262009  0.0  0.0      0     0 ?        I    16:40   0:00  \_ [kworker/8:1-events]
+root      267162  0.0  0.0      0     0 ?        I    16:43   0:00  \_ [kworker/6:1-events]
+root      185657  0.0  0.0      0     0 ?        I    16:02   0:00  \_ [kworker/10:2-events]
+--- pstree of self ---
+hermes,286482,luffy -m hermes_cli.main gateway run
+  |-timeout,295909 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 286482 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,295910 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 286482 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,295916 -40
+  |       `-pstree,295915 -plau 286482
+  |-{hermes},286603
+  |-{hermes},286604
+  |-{hermes},286610
+  |-{hermes},286620
+  |-{hermes},286762
+  |-{hermes},286763
+  |-{hermes},286917
+  |-{hermes},289287
+  `-{hermes},290447
+--- /proc/loadavg ---
+1.94 1.81 1.83 1/1252 295917
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-29T12:48:54Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    14:34   0:00 [kthreadd]
+root      418860  0.8  0.0      0     0 ?        I<   18:04   0:07  \_ [kworker/u65:3-rb_allocator]
+root      403505  0.8  0.0      0     0 ?        I<   17:58   0:10  \_ [kworker/u65:2-rb_allocator]
+root      451301  0.4  0.0      0     0 ?        I    18:18   0:00  \_ [kworker/u64:6-events_unbound]
+root      441445  0.3  0.0      0     0 ?        I<   18:14   0:00  \_ [kworker/u65:1-rb_allocator]
+root      430773  0.3  0.0      0     0 ?        I<   18:09   0:02  \_ [kworker/u65:0-rb_allocator]
+root      395187  0.2  0.0      0     0 ?        I    17:54   0:03  \_ [kworker/2:2-i915-unordered]
+root          16  0.2  0.0      0     0 ?        I    14:34   0:28  \_ [rcu_preempt]
+root         130  0.2  0.0      0     0 ?        S    14:34   0:27  \_ [irq/9-acpi]
+root      449349  0.1  0.0      0     0 ?        I    18:17   0:00  \_ [kworker/2:0-events]
+root      448502  0.1  0.0      0     0 ?        I    18:17   0:00  \_ [kworker/u64:4-ext4-rsv-conversion]
+root          56  0.1  0.0      0     0 ?        S    14:34   0:14  \_ [migration/12]
+root         405  0.1  0.0      0     0 ?        I<   14:34   0:14  \_ [kworker/8:1H-kblockd]
+root         540  0.0  0.0      0     0 ?        S    14:34   0:13  \_ [irq/171-iwlwifi:default_queue]
+root         726  0.0  0.0      0     0 ?        I<   14:34   0:11  \_ [kworker/10:1H-kblockd]
+root          62  0.0  0.0      0     0 ?        S    14:34   0:10  \_ [migration/13]
+root         545  0.0  0.0      0     0 ?        S    14:34   0:08  \_ [irq/176-iwlwifi:queue_5]
+root          68  0.0  0.0      0     0 ?        S    14:34   0:07  \_ [migration/14]
+root         367  0.0  0.0      0     0 ?        I<   14:34   0:06  \_ [kworker/6:1H-kblockd]
+root          74  0.0  0.0      0     0 ?        S    14:34   0:06  \_ [migration/15]
+root         266  0.0  0.0      0     0 ?        I<   14:34   0:05  \_ [kworker/4:1H-kblockd]
+root      388009  0.0  0.0      0     0 ?        I    17:50   0:00  \_ [kworker/u64:1-events_unbound]
+root         543  0.0  0.0      0     0 ?        S    14:34   0:05  \_ [irq/174-iwlwifi:queue_3]
+root      319402  0.0  0.0      0     0 ?        I    17:12   0:01  \_ [kworker/u64:2-events_unbound]
+root         332  0.0  0.0      0     0 ?        S    14:34   0:05  \_ [jbd2/nvme0n1p7-8]
+root      422498  0.0  0.0      0     0 ?        I    18:05   0:00  \_ [kworker/u64:3-flush-259:0]
+root      434665  0.0  0.0      0     0 ?        I    18:11   0:00  \_ [kworker/u64:0-events_unbound]
+root         125  0.0  0.0      0     0 ?        SN   14:34   0:04  \_ [khugepaged]
+root          44  0.0  0.0      0     0 ?        S    14:34   0:04  \_ [migration/8]
+root         388  0.0  0.0      0     0 ?        I<   14:34   0:04  \_ [kworker/12:1H-kblockd]
+root         295  0.0  0.0      0     0 ?        I<   14:34   0:03  \_ [kworker/2:1H-i915_cleanup]
+root          50  0.0  0.0      0     0 ?        S    14:34   0:03  \_ [migration/10]
+root         293  0.0  0.0      0     0 ?        I<   14:34   0:03  \_ [kworker/5:1H-kblockd]
+root         347  0.0  0.0      0     0 ?        I<   14:34   0:02  \_ [kworker/13:1H-kblockd]
+root          26  0.0  0.0      0     0 ?        S    14:34   0:02  \_ [migration/2]
+root          20  0.0  0.0      0     0 ?        S    14:34   0:02  \_ [migration/0]
+root      432699  0.0  0.0      0     0 ?        I    18:10   0:00  \_ [kworker/4:1-cgwb_release]
+root          32  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [migration/4]
+root         141  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [kswapd0]
+root          38  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [migration/6]
+root      440424  0.0  0.0      0     0 ?        D    18:14   0:00  \_ [kworker/12:1+inode_switch_wbs]
+root         407  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/7:1H-i915_cleanup]
+root         391  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/14:1H-kblockd]
+root         716  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/9:1H-i915_cleanup]
+root      393415  0.0  0.0      0     0 ?        I    17:53   0:00  \_ [kworker/0:0-rcu_gp]
+root         402  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/0:1H-kblockd]
+root         542  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [irq/173-iwlwifi:queue_2]
+root         294  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/15:1H-kblockd]
+root         403  0.0  0.0      0     0 ?        I<   14:34   0:01  \_ [kworker/11:1H-kblockd]
+root      425630  0.0  0.0      0     0 ?        I    18:07   0:00  \_ [kworker/6:0-events]
+root         123  0.0  0.0      0     0 ?        S    14:34   0:01  \_ [kcompactd0]
+root      433207  0.0  0.0      0     0 ?        D    18:10   0:00  \_ [kworker/10:1+events]
+root        1144  0.0  0.0      0     0 ?        I<   14:35   0:01  \_ [kworker/3:1H-kblockd]
+root      392104  0.0  0.0      0     0 ?        I    17:52   0:00  \_ [kworker/8:1-events]
+root          81  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [ksoftirqd/1]
+root         715  0.0  0.0      0     0 ?        I<   14:34   0:00  \_ [kworker/1:1H-kblockd]
+root         541  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [irq/172-iwlwifi:queue_1]
+root         550  0.0  0.0      0     0 ?        S    14:34   0:00  \_ [irq/181-iwlwifi:queue_10]
+root      347755  0.0  0.0      0     0 ?        D    17:27   0:00  \_ [kworker/13:1+events]
+--- pstree of self ---
+hermes,295977,luffy -m hermes_cli.main gateway run
+  |-timeout,451577 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 295977 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,451581 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 295977 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,451619 -40
+  |       `-pstree,451618 -plau 295977
+  |-{hermes},296095
+  |-{hermes},296096
+  |-{hermes},296101
+  |-{hermes},296135
+  |-{hermes},296249
+  |-{hermes},296250
+  `-{hermes},301411
+--- /proc/loadavg ---
+2.82 2.67 2.49 6/496 451638
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-29T19:20:07Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    Jun29   0:00 [kthreadd]
+root      274737  4.0  0.0      0     0 ?        D    00:50   0:00  \_ [kworker/u64:4+events_unbound]
+root      246115  0.7  0.0      0     0 ?        I<   00:32   0:07  \_ [kworker/u65:2-rb_allocator]
+root      220702  0.6  0.0      0     0 ?        I<   00:16   0:13  \_ [kworker/u65:3-rb_allocator]
+root         131  0.2  0.0      0     0 ?        S    Jun29   0:24  \_ [irq/9-acpi]
+root          16  0.2  0.0      0     0 ?        I    Jun29   0:23  \_ [rcu_preempt]
+root      272579  0.2  0.0      0     0 ?        I<   00:48   0:00  \_ [kworker/u65:1-hci0]
+root      256419  0.1  0.0      0     0 ?        I<   00:38   0:01  \_ [kworker/u65:0-rb_allocator]
+root          56  0.1  0.0      0     0 ?        S    Jun29   0:12  \_ [migration/12]
+root         327  0.1  0.0      0     0 ?        I<   Jun29   0:10  \_ [kworker/8:1H-kblockd]
+root      201625  0.0  0.0      0     0 ?        I    00:05   0:02  \_ [kworker/2:0-i915-unordered]
+root          62  0.0  0.0      0     0 ?        S    Jun29   0:08  \_ [migration/13]
+root         502  0.0  0.0      0     0 ?        S    Jun29   0:08  \_ [irq/168-MSNB0001:00]
+root      214680  0.0  0.0      0     0 ?        R    00:13   0:01  \_ [kworker/2:2-events]
+root      273642  0.0  0.0      0     0 ?        I    00:49   0:00  \_ [kworker/u64:0-events_unbound]
+root         295  0.0  0.0      0     0 ?        I<   Jun29   0:07  \_ [kworker/10:1H-i915_cleanup]
+root          68  0.0  0.0      0     0 ?        S    Jun29   0:06  \_ [migration/14]
+root         266  0.0  0.0      0     0 ?        I<   Jun29   0:06  \_ [kworker/6:1H-i915_cleanup]
+root         409  0.0  0.0      0     0 ?        I<   Jun29   0:05  \_ [kworker/4:1H-kblockd]
+root          74  0.0  0.0      0     0 ?        S    Jun29   0:05  \_ [migration/15]
+root         120  0.0  0.0      0     0 ?        I    Jun29   0:04  \_ [kworker/u64:2-events_unbound]
+root      264961  0.0  0.0      0     0 ?        I    00:44   0:00  \_ [kworker/u64:1-i915]
+root      229499  0.0  0.0      0     0 ?        I    00:22   0:00  \_ [kworker/u64:3-writeback]
+root         293  0.0  0.0      0     0 ?        I<   Jun29   0:03  \_ [kworker/2:1H-i915_cleanup]
+root          44  0.0  0.0      0     0 ?        S    Jun29   0:03  \_ [migration/8]
+root         743  0.0  0.0      0     0 ?        I<   Jun29   0:03  \_ [kworker/5:1H-i915_cleanup]
+root          59  0.0  0.0      0     0 ?        I<   Jun29   0:02  \_ [kworker/12:0H-kblockd]
+root         125  0.0  0.0      0     0 ?        SN   Jun29   0:02  \_ [khugepaged]
+root          50  0.0  0.0      0     0 ?        S    Jun29   0:02  \_ [migration/10]
+root          26  0.0  0.0      0     0 ?        S    Jun29   0:02  \_ [migration/2]
+root         391  0.0  0.0      0     0 ?        I<   Jun29   0:02  \_ [kworker/13:1H-kblockd]
+root          20  0.0  0.0      0     0 ?        S    Jun29   0:02  \_ [migration/0]
+root         406  0.0  0.0      0     0 ?        I<   Jun29   0:02  \_ [kworker/7:1H-kblockd]
+root          32  0.0  0.0      0     0 ?        S    Jun29   0:01  \_ [migration/4]
+root          38  0.0  0.0      0     0 ?        S    Jun29   0:01  \_ [migration/6]
+root         410  0.0  0.0      0     0 ?        I<   Jun29   0:01  \_ [kworker/14:1H-kblockd]
+root         534  0.0  0.0      0     0 ?        S    Jun29   0:01  \_ [irq/170-iwlwifi:default_queue]
+root      168375  0.0  0.0      0     0 ?        I    Jun29   0:00  \_ [kworker/4:2-cgwb_release]
+root         333  0.0  0.0      0     0 ?        S    Jun29   0:01  \_ [jbd2/nvme0n1p7-8]
+root      217728  0.0  0.0      0     0 ?        I    00:15   0:00  \_ [kworker/0:0-rcu_gp]
+root         392  0.0  0.0      0     0 ?        I<   Jun29   0:01  \_ [kworker/0:1H-i915_cleanup]
+root         411  0.0  0.0      0     0 ?        I<   Jun29   0:01  \_ [kworker/9:1H-kblockd]
+root         388  0.0  0.0      0     0 ?        I<   Jun29   0:01  \_ [kworker/15:1H-kblockd]
+root      162266  0.0  0.0      0     0 ?        I    Jun29   0:00  \_ [kworker/13:2-rcu_gp]
+root      214741  0.0  0.0      0     0 ?        I    00:13   0:00  \_ [kworker/8:2-events]
+root      171863  0.0  0.0      0     0 ?        D    Jun29   0:00  \_ [kworker/15:12+events]
+root      267591  0.0  0.0      0     0 ?        I    00:46   0:00  \_ [kworker/6:0-events]
+root         393  0.0  0.0      0     0 ?        I<   Jun29   0:00  \_ [kworker/11:1H-kblockd]
+root         778  0.0  0.0      0     0 ?        I<   Jun29   0:00  \_ [kworker/1:1H-kblockd]
+root      266887  0.0  0.0      0     0 ?        I    00:45   0:00  \_ [kworker/10:0-events]
+root          70  0.0  0.0      0     0 ?        I    Jun29   0:00  \_ [kworker/14:0-memcg]
+root        1581  0.0  0.0      0     0 ?        I<   Jun29   0:00  \_ [kworker/3:1H-kblockd]
+root      185932  0.0  0.0      0     0 ?        I    Jun29   0:00  \_ [kworker/12:0-inode_switch_wbs]
+root          15  0.0  0.0      0     0 ?        S    Jun29   0:00  \_ [ksoftirqd/0]
+root          81  0.0  0.0      0     0 ?        S    Jun29   0:00  \_ [ksoftirqd/1]
+root      257615  0.0  0.0      0     0 ?        I    00:39   0:00  \_ [kworker/6:3-events]
+root      143303  0.0  0.0      0     0 ?        I    Jun29   0:00  \_ [kworker/1:2-events]
+root         123  0.0  0.0      0     0 ?        S    Jun29   0:00  \_ [kcompactd0]
+root      138293  0.0  0.0      0     0 ?        I    Jun29   0:00  \_ [kworker/5:1-memcg]
+--- pstree of self ---
+hermes,750,luffy -m hermes_cli.main gateway run
+  |-timeout,274855 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 750 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,274869 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 750 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,274905 -40
+  |       `-pstree,274904 -plau 750
+  |-{hermes},828
+  |-{hermes},829
+  |-{hermes},830
+  |-{hermes},833
+  |-{hermes},834
+  |-{hermes},1406
+  `-{hermes},1407
+--- /proc/loadavg ---
+2.39 2.03 2.51 3/444 274925
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-30T10:54:38Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    12:58   0:00 [kthreadd]
+root      318121  0.7  0.0      0     0 ?        I<   16:06   0:07  \_ [kworker/u65:3-hci0]
+root      317317  0.6  0.0      0     0 ?        I<   16:06   0:07  \_ [kworker/u65:2-rb_allocator]
+root      330313  0.5  0.0      0     0 ?        I<   16:14   0:03  \_ [kworker/u65:4-hci0]
+root      327462  0.4  0.0      0     0 ?        I<   16:12   0:03  \_ [kworker/u65:0-hci0]
+root          16  0.2  0.0      0     0 ?        I    12:58   0:25  \_ [rcu_preempt]
+root          56  0.1  0.0      0     0 ?        S    12:58   0:24  \_ [migration/12]
+root      265362  0.1  0.0      0     0 ?        I    15:33   0:05  \_ [kworker/2:1-i915-unordered]
+root         131  0.1  0.0      0     0 ?        S    12:58   0:16  \_ [irq/9-acpi]
+root          62  0.1  0.0      0     0 ?        S    12:58   0:15  \_ [migration/13]
+root          68  0.0  0.0      0     0 ?        S    12:58   0:11  \_ [migration/14]
+root          74  0.0  0.0      0     0 ?        S    12:58   0:09  \_ [migration/15]
+root         739  0.0  0.0      0     0 ?        I<   12:58   0:06  \_ [kworker/8:1H-kblockd]
+root         267  0.0  0.0      0     0 ?        I<   12:58   0:06  \_ [kworker/4:1H-kblockd]
+root      340150  0.0  0.0      0     0 ?        I    16:20   0:00  \_ [kworker/u64:0-flush-259:0]
+root         292  0.0  0.0      0     0 ?        I<   12:58   0:06  \_ [kworker/6:1H-i915_cleanup]
+root      253908  0.0  0.0      0     0 ?        I    15:26   0:01  \_ [kworker/u64:4-netns]
+root      276959  0.0  0.0      0     0 ?        I    15:40   0:01  \_ [kworker/u64:3-ext4-rsv-conversion]
+root      304769  0.0  0.0      0     0 ?        I    15:58   0:00  \_ [kworker/u64:1-events_unbound]
+root         829  0.0  0.0      0     0 ?        I<   12:58   0:05  \_ [kworker/10:1H-kblockd]
+root         386  0.0  0.0      0     0 ?        I<   12:58   0:05  \_ [kworker/12:1H-kblockd]
+root          44  0.0  0.0      0     0 ?        S    12:58   0:04  \_ [migration/8]
+root         826  0.0  0.0      0     0 ?        I<   12:58   0:04  \_ [kworker/13:1H-kblockd]
+root         778  0.0  0.0      0     0 ?        I<   12:58   0:04  \_ [kworker/2:1H-kblockd]
+root          50  0.0  0.0      0     0 ?        S    12:58   0:04  \_ [migration/10]
+root          20  0.0  0.0      0     0 ?        S    12:58   0:03  \_ [migration/0]
+root         293  0.0  0.0      0     0 ?        I<   12:58   0:03  \_ [kworker/14:1H-kblockd]
+root          26  0.0  0.0      0     0 ?        S    12:58   0:03  \_ [migration/2]
+root         345  0.0  0.0      0     0 ?        I<   12:58   0:02  \_ [kworker/15:1H-kblockd]
+root          32  0.0  0.0      0     0 ?        S    12:58   0:02  \_ [migration/4]
+root         883  0.0  0.0      0     0 ?        I<   12:58   0:02  \_ [kworker/9:1H-kblockd]
+root          38  0.0  0.0      0     0 ?        S    12:58   0:02  \_ [migration/6]
+root         125  0.0  0.0      0     0 ?        SN   12:58   0:02  \_ [khugepaged]
+root      306944  0.0  0.0      0     0 ?        I    15:59   0:00  \_ [kworker/3:0-cgroup_free]
+root         777  0.0  0.0      0     0 ?        I<   12:58   0:02  \_ [kworker/5:1H-kblockd]
+root         389  0.0  0.0      0     0 ?        I<   12:58   0:02  \_ [kworker/0:1H-kblockd]
+root         539  0.0  0.0      0     0 ?        S    12:58   0:02  \_ [irq/171-iwlwifi:default_queue]
+root         365  0.0  0.0      0     0 ?        I<   12:58   0:01  \_ [kworker/1:1H-kblockd]
+root         736  0.0  0.0      0     0 ?        I<   12:58   0:01  \_ [kworker/7:1H-kblockd]
+root          15  0.0  0.0      0     0 ?        S    12:58   0:01  \_ [ksoftirqd/0]
+root         330  0.0  0.0      0     0 ?        S    12:58   0:01  \_ [jbd2/nvme0n1p7-8]
+root       95613  0.0  0.0      0     0 ?        I    13:48   0:01  \_ [kworker/0:1-memcg]
+root         401  0.0  0.0      0     0 ?        I<   12:58   0:01  \_ [kworker/11:1H-i915_cleanup]
+root      291683  0.0  0.0      0     0 ?        I    15:50   0:00  \_ [kworker/2:2-memcg]
+root      323057  0.0  0.0      0     0 ?        I    16:09   0:00  \_ [kworker/4:2-cgroup_release]
+root         772  0.0  0.0      0     0 ?        I<   12:58   0:01  \_ [kworker/3:1H-kblockd]
+root      341299  0.0  0.0      0     0 ?        I    16:21   0:00  \_ [kworker/12:2-events]
+root          81  0.0  0.0      0     0 ?        S    12:58   0:01  \_ [ksoftirqd/1]
+root      194123  0.0  0.0      0     0 ?        D    14:49   0:00  \_ [kworker/8:1+inode_switch_wbs]
+root         140  0.0  0.0      0     0 ?        I    12:58   0:01  \_ [kworker/14:1-memcg]
+root         146  0.0  0.0      0     0 ?        I    12:58   0:01  \_ [kworker/15:1-memcg]
+root      100101  0.0  0.0      0     0 ?        I    13:50   0:00  \_ [kworker/10:0-events]
+root         499  0.0  0.0      0     0 ?        S    12:58   0:00  \_ [irq/168-MSNB0001:00]
+root      296204  0.0  0.0      0     0 ?        I    15:52   0:00  \_ [kworker/13:2-rcu_gp]
+root      341763  0.0  0.0      0     0 ?        I    16:21   0:00  \_ [kworker/6:3-events]
+root      326845  0.0  0.0      0     0 ?        I    16:12   0:00  \_ [kworker/12:0-cgroup_free]
+root         544  0.0  0.0      0     0 ?        S    12:58   0:00  \_ [irq/176-iwlwifi:queue_5]
+root      305211  0.0  0.0      0     0 ?        I    15:58   0:00  \_ [kworker/12:1-cgroup_offline]
+root      169043  0.0  0.0      0     0 ?        I    14:33   0:00  \_ [kworker/5:1-memcg]
+--- pstree of self ---
+hermes,744,luffy -m hermes_cli.main gateway run
+  |-timeout,346583 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 744 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,346587 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 744 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,346640 -40
+  |       `-pstree,346639 -plau 744
+  |-{hermes},824
+  |-{hermes},825
+  |-{hermes},827
+  |-{hermes},831
+  |-{hermes},832
+  |-{hermes},3230
+  `-{hermes},3231
+--- /proc/loadavg ---
+2.17 2.51 2.88 4/437 346663
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-30T12:21:37Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    17:01   0:00 [kthreadd]
+root      237952  7.1  0.0      0     0 ?        D    17:51   0:00  \_ [kworker/u64:4+netns]
+root       28594  1.1  0.0      0     0 ?        I<   17:13   0:27  \_ [kworker/u65:3-rb_allocator]
+root       97861  0.9  0.0      0     0 ?        I<   17:40   0:06  \_ [kworker/u65:0-rb_allocator]
+root      173947  0.8  0.0      0     0 ?        I<   17:46   0:02  \_ [kworker/u65:1-rb_allocator]
+root         131  0.3  0.0      0     0 ?        S    17:01   0:11  \_ [irq/9-acpi]
+root          16  0.3  0.0      0     0 ?        I    17:01   0:09  \_ [rcu_preempt]
+root       38673  0.2  0.0      0     0 ?        I    17:17   0:05  \_ [kworker/u64:3-writeback]
+root          56  0.2  0.0      0     0 ?        S    17:01   0:08  \_ [migration/12]
+root       67638  0.2  0.0      0     0 ?        I    17:33   0:02  \_ [kworker/2:0-cgroup_release]
+root      207463  0.2  0.0      0     0 ?        I    17:49   0:00  \_ [kworker/2:2-inode_switch_wbs]
+root          62  0.1  0.0      0     0 ?        S    17:01   0:05  \_ [migration/13]
+root       71660  0.1  0.0      0     0 ?        I    17:36   0:01  \_ [kworker/u64:2-i915]
+root          68  0.1  0.0      0     0 ?        S    17:01   0:04  \_ [migration/14]
+root         140  0.1  0.0      0     0 ?        S    17:01   0:03  \_ [kswapd0]
+root         145  0.1  0.0      0     0 ?        I    17:01   0:03  \_ [kworker/14:1-memcg]
+root          74  0.1  0.0      0     0 ?        S    17:01   0:03  \_ [migration/15]
+root       50349  0.0  0.0      0     0 ?        I    17:24   0:01  \_ [kworker/u64:1-flush-259:0]
+root         404  0.0  0.0      0     0 ?        I<   17:01   0:02  \_ [kworker/8:1H-kblockd]
+root         328  0.0  0.0      0     0 ?        I<   17:01   0:02  \_ [kworker/4:1H-kblockd]
+root         266  0.0  0.0      0     0 ?        I<   17:01   0:01  \_ [kworker/6:1H-i915_cleanup]
+root         123  0.0  0.0      0     0 ?        S    17:01   0:01  \_ [kcompactd0]
+root         827  0.0  0.0      0     0 ?        I<   17:01   0:01  \_ [kworker/10:1H-kblockd]
+root         718  0.0  0.0      0     0 ?        I<   17:01   0:01  \_ [kworker/2:1H-kblockd]
+root          44  0.0  0.0      0     0 ?        S    17:01   0:01  \_ [migration/8]
+root         125  0.0  0.0      0     0 ?        SN   17:01   0:01  \_ [khugepaged]
+root          20  0.0  0.0      0     0 ?        S    17:01   0:01  \_ [migration/0]
+root         293  0.0  0.0      0     0 ?        I<   17:01   0:01  \_ [kworker/12:1H-kblockd]
+root          50  0.0  0.0      0     0 ?        S    17:01   0:01  \_ [migration/10]
+root          26  0.0  0.0      0     0 ?        S    17:01   0:01  \_ [migration/2]
+root         402  0.0  0.0      0     0 ?        I<   17:01   0:01  \_ [kworker/13:1H-kblockd]
+root         534  0.0  0.0      0     0 ?        S    17:01   0:00  \_ [irq/172-iwlwifi:default_queue]
+root          32  0.0  0.0      0     0 ?        S    17:01   0:00  \_ [migration/4]
+root          95  0.0  0.0      0     0 ?        I<   17:01   0:00  \_ [kworker/5:0H-kblockd]
+root         349  0.0  0.0      0     0 ?        I<   17:01   0:00  \_ [kworker/14:1H-kblockd]
+root          38  0.0  0.0      0     0 ?        S    17:01   0:00  \_ [migration/6]
+root         334  0.0  0.0      0     0 ?        S    17:01   0:00  \_ [jbd2/nvme0n1p7-8]
+root         292  0.0  0.0      0     0 ?        I<   17:01   0:00  \_ [kworker/9:1H-kblockd]
+root         741  0.0  0.0      0     0 ?        I<   17:01   0:00  \_ [kworker/1:1H-kblockd]
+root         370  0.0  0.0      0     0 ?        I<   17:01   0:00  \_ [kworker/15:1H-kblockd]
+root         719  0.0  0.0      0     0 ?        I<   17:01   0:00  \_ [kworker/7:1H-kblockd]
+root         790  0.0  0.0      0     0 ?        I<   17:01   0:00  \_ [kworker/11:1H-kblockd]
+root          10  0.0  0.0      0     0 ?        I<   17:01   0:00  \_ [kworker/0:0H-kblockd]
+root         660  0.0  0.0      0     0 ?        I<   17:01   0:00  \_ [kworker/3:1H-kblockd]
+root       49912  0.0  0.0      0     0 ?        I    17:24   0:00  \_ [kworker/0:0-memcg]
+root       90268  0.0  0.0      0     0 ?        I    17:40   0:00  \_ [kworker/12:0-memcg]
+root       61964  0.0  0.0      0     0 ?        I    17:31   0:00  \_ [kworker/4:2-events]
+root         539  0.0  0.0      0     0 ?        S    17:01   0:00  \_ [irq/177-iwlwifi:queue_5]
+root       49003  0.0  0.0      0     0 ?        I    17:24   0:00  \_ [kworker/13:1-events]
+root         154  0.0  0.0      0     0 ?        I    17:01   0:00  \_ [kworker/15:1-events]
+root          81  0.0  0.0      0     0 ?        S    17:01   0:00  \_ [ksoftirqd/1]
+root       47068  0.0  0.0      0     0 ?        D    17:22   0:00  \_ [kworker/8:1+events]
+root      199819  0.0  0.0      0     0 ?        I    17:48   0:00  \_ [kworker/6:3-events]
+root         550  0.0  0.0      0     0 ?        I    17:01   0:00  \_ [kworker/10:3-memcg]
+root         540  0.0  0.0      0     0 ?        S    17:01   0:00  \_ [irq/178-iwlwifi:queue_6]
+root       63802  0.0  0.0      0     0 ?        I    17:32   0:00  \_ [kworker/3:2-memcg]
+root          80  0.0  0.0      0     0 ?        S    17:01   0:00  \_ [migration/1]
+root          15  0.0  0.0      0     0 ?        S    17:01   0:00  \_ [ksoftirqd/0]
+root       32819  0.0  0.0      0     0 ?        I    17:15   0:00  \_ [kworker/5:0-memcg]
+--- pstree of self ---
+hermes,749,luffy -m hermes_cli.main gateway run
+  |-timeout,238179 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 749 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,238184 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 749 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,238237 -40
+  |       `-pstree,238236 -plau 749
+  |-{hermes},828
+  |-{hermes},829
+  |-{hermes},830
+  |-{hermes},833
+  |-{hermes},834
+  |-{hermes},1552
+  `-{hermes},1553
+--- /proc/loadavg ---
+4.06 4.21 3.91 6/408 238270
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-30T18:02:04Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    19:08   0:00 [kthreadd]
+root      447399  1.4  0.0      0     0 ?        I<   23:20   0:10  \_ [kworker/u65:3-hci0]
+root      323904  0.7  0.0      0     0 ?        I<   22:13   0:36  \_ [kworker/u65:1-rb_allocator]
+root      418296  0.4  0.0      0     0 ?        I<   23:04   0:07  \_ [kworker/u65:2-hci0]
+root         130  0.2  0.0      0     0 ?        S    19:08   0:40  \_ [irq/9-acpi]
+root          16  0.2  0.0      0     0 ?        I    19:08   0:34  \_ [rcu_preempt]
+root          56  0.1  0.0      0     0 ?        S    19:08   0:22  \_ [migration/12]
+root      383302  0.1  0.0      0     0 ?        D    22:46   0:03  \_ [kworker/2:1+events]
+root          62  0.0  0.0      0     0 ?        S    19:08   0:15  \_ [migration/13]
+root         291  0.0  0.0      0     0 ?        I<   19:08   0:14  \_ [kworker/8:1H-kblockd]
+root          68  0.0  0.0      0     0 ?        S    19:08   0:11  \_ [migration/14]
+root         776  0.0  0.0      0     0 ?        I<   19:08   0:10  \_ [kworker/10:1H-kblockd]
+root         325  0.0  0.0      0     0 ?        I<   19:08   0:09  \_ [kworker/4:1H-kblockd]
+root         263  0.0  0.0      0     0 ?        I<   19:08   0:09  \_ [kworker/6:1H-kblockd]
+root          74  0.0  0.0      0     0 ?        S    19:08   0:09  \_ [migration/15]
+root      450619  0.0  0.0      0     0 ?        D    23:22   0:00  \_ [kworker/u64:5+events_unbound]
+root      450620  0.0  0.0      0     0 ?        I    23:22   0:00  \_ [kworker/u64:6-flush-259:0]
+root         775  0.0  0.0      0     0 ?        I<   19:08   0:06  \_ [kworker/2:1H-i915_cleanup]
+root         389  0.0  0.0      0     0 ?        I<   19:08   0:06  \_ [kworker/12:1H-kblockd]
+root          44  0.0  0.0      0     0 ?        S    19:08   0:05  \_ [migration/8]
+root      221614  0.0  0.0      0     0 ?        I    21:15   0:02  \_ [kworker/u64:2-events_unbound]
+root         125  0.0  0.0      0     0 ?        SN   19:08   0:04  \_ [khugepaged]
+root         293  0.0  0.0      0     0 ?        I<   19:08   0:04  \_ [kworker/13:1H-kblockd]
+root          50  0.0  0.0      0     0 ?        S    19:08   0:04  \_ [migration/10]
+root      290675  0.0  0.0      0     0 ?        I    21:54   0:01  \_ [kworker/2:0-kacpi_notify]
+root          20  0.0  0.0      0     0 ?        S    19:08   0:03  \_ [migration/0]
+root          26  0.0  0.0      0     0 ?        S    19:08   0:03  \_ [migration/2]
+root         719  0.0  0.0      0     0 ?        I<   19:08   0:03  \_ [kworker/5:1H-kblockd]
+root         661  0.0  0.0      0     0 ?        I<   19:08   0:03  \_ [kworker/14:1H-kblockd]
+root          81  0.0  0.0      0     0 ?        S    19:08   0:03  \_ [ksoftirqd/1]
+root         404  0.0  0.0      0     0 ?        I<   19:08   0:02  \_ [kworker/7:1H-i915_cleanup]
+root          32  0.0  0.0      0     0 ?        S    19:08   0:02  \_ [migration/4]
+root          38  0.0  0.0      0     0 ?        S    19:08   0:02  \_ [migration/6]
+root         331  0.0  0.0      0     0 ?        S    19:08   0:02  \_ [jbd2/nvme0n1p7-8]
+root         499  0.0  0.0      0     0 ?        S    19:08   0:02  \_ [irq/169-MSNB0001:00]
+root         292  0.0  0.0      0     0 ?        I<   19:08   0:02  \_ [kworker/15:1H-kblockd]
+root         805  0.0  0.0      0     0 ?        I<   19:08   0:02  \_ [kworker/0:1H-kblockd]
+root         541  0.0  0.0      0     0 ?        S    19:08   0:02  \_ [irq/172-iwlwifi:default_queue]
+root         365  0.0  0.0      0     0 ?        I<   19:08   0:02  \_ [kworker/9:1H-i915_cleanup]
+root      452070  0.0  0.0      0     0 ?        I    23:22   0:00  \_ [kworker/4:0-events]
+root         716  0.0  0.0      0     0 ?        I<   19:08   0:01  \_ [kworker/11:1H-kblockd]
+root      463868  0.0  0.0      0     0 ?        I    23:30   0:00  \_ [kworker/9:0-cgroup_release]
+root         324  0.0  0.0      0     0 ?        I<   19:08   0:01  \_ [kworker/1:1H-kblockd]
+root      453447  0.0  0.0      0     0 ?        I    23:23   0:00  \_ [kworker/0:2-rcu_gp]
+root      404579  0.0  0.0      0     0 ?        I    22:57   0:00  \_ [kworker/3:1-events]
+root         426  0.0  0.0      0     0 ?        I    19:08   0:01  \_ [kworker/10:2-rcu_gp]
+root      405852  0.0  0.0      0     0 ?        I    22:58   0:00  \_ [kworker/12:0-cgroup_offline]
+root          15  0.0  0.0      0     0 ?        S    19:08   0:01  \_ [ksoftirqd/0]
+root      455282  0.0  0.0      0     0 ?        I    23:24   0:00  \_ [kworker/6:3-events]
+root      337657  0.0  0.0      0     0 ?        I    22:22   0:00  \_ [kworker/8:1-events]
+root       30566  0.0  0.0      0     0 ?        I    19:23   0:00  \_ [kworker/15:0-cgroup_offline]
+root      229726  0.0  0.0      0     0 ?        I    21:20   0:00  \_ [kworker/14:2-rcu_gp]
+root        1122  0.0  0.0      0     0 ?        I<   19:08   0:00  \_ [kworker/3:1H-kblockd]
+root         542  0.0  0.0      0     0 ?        S    19:08   0:00  \_ [irq/173-iwlwifi:queue_1]
+root      348911  0.0  0.0      0     0 ?        I    22:28   0:00  \_ [kworker/13:1-rcu_gp]
+root      405441  0.0  0.0      0     0 ?        I    22:57   0:00  \_ [kworker/6:2-events]
+root         548  0.0  0.0      0     0 ?        S    19:08   0:00  \_ [irq/179-iwlwifi:queue_7]
+root         123  0.0  0.0      0     0 ?        S    19:08   0:00  \_ [kcompactd0]
+root         156  0.0  0.0      0     0 ?        I    19:08   0:00  \_ [kworker/14:1-events]
+--- pstree of self ---
+hermes,747,luffy -m hermes_cli.main gateway run
+  |-timeout,466935 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 747 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,466941 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 747 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,466985 -40
+  |       `-pstree,466984 -plau 747
+  |-{hermes},831
+  |-{hermes},832
+  |-{hermes},833
+  |-{hermes},836
+  |-{hermes},1692
+  |-{hermes},1693
+  |-{hermes},2739
+  `-{hermes},62540
+--- /proc/loadavg ---
+1.39 1.81 2.13 6/425 467005
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-07-01T06:44:44Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    09:07   0:00 [kthreadd]
+root      262438  0.6  0.0      0     0 ?        I<   12:04   0:04  \_ [kworker/u65:3-i915_flip]
+root      248015  0.5  0.0      0     0 ?        I<   11:54   0:06  \_ [kworker/u65:2-rb_allocator]
+root      267368  0.3  0.0      0     0 ?        I    12:07   0:01  \_ [kworker/2:0-events]
+root          16  0.2  0.0      0     0 ?        I    09:07   0:27  \_ [rcu_preempt]
+root      239831  0.2  0.0      0     0 ?        D    11:49   0:03  \_ [kworker/u64:2+events_unbound]
+root         130  0.2  0.0      0     0 ?        S    09:07   0:26  \_ [irq/9-acpi]
+root      256875  0.1  0.0      0     0 ?        I    12:00   0:01  \_ [kworker/u64:3-events_unbound]
+root      256565  0.1  0.0      0     0 ?        I    12:00   0:01  \_ [kworker/u64:1-events_unbound]
+root         500  0.1  0.0      0     0 ?        S    09:07   0:15  \_ [irq/168-MSNB0001:00]
+root         327  0.0  0.0      0     0 ?        I<   09:07   0:10  \_ [kworker/8:1H-kblockd]
+root          56  0.0  0.0      0     0 ?        S    09:07   0:08  \_ [migration/12]
+root         390  0.0  0.0      0     0 ?        I<   09:07   0:06  \_ [kworker/10:1H-kblockd]
+root          62  0.0  0.0      0     0 ?        S    09:07   0:06  \_ [migration/13]
+root         813  0.0  0.0      0     0 ?        I<   09:07   0:06  \_ [kworker/6:1H-i915_cleanup]
+root         350  0.0  0.0      0     0 ?        I<   09:07   0:06  \_ [kworker/4:1H-kblockd]
+root          68  0.0  0.0      0     0 ?        S    09:07   0:05  \_ [migration/14]
+root          74  0.0  0.0      0     0 ?        S    09:07   0:04  \_ [migration/15]
+root          44  0.0  0.0      0     0 ?        S    09:07   0:02  \_ [migration/8]
+root         719  0.0  0.0      0     0 ?        I<   09:07   0:02  \_ [kworker/2:1H-i915_cleanup]
+root        1110  0.0  0.0      0     0 ?        I<   09:08   0:02  \_ [kworker/5:1H-kblockd]
+root         394  0.0  0.0      0     0 ?        I<   09:07   0:02  \_ [kworker/7:1H-i915_cleanup]
+root         125  0.0  0.0      0     0 ?        SN   09:07   0:02  \_ [khugepaged]
+root          50  0.0  0.0      0     0 ?        S    09:07   0:02  \_ [migration/10]
+root         407  0.0  0.0      0     0 ?        I<   09:07   0:01  \_ [kworker/12:1H-kblockd]
+root          26  0.0  0.0      0     0 ?        S    09:07   0:01  \_ [migration/2]
+root          20  0.0  0.0      0     0 ?        S    09:07   0:01  \_ [migration/0]
+root         264  0.0  0.0      0     0 ?        I    09:07   0:01  \_ [kworker/4:1-cgroup_free]
+root         333  0.0  0.0      0     0 ?        S    09:07   0:01  \_ [jbd2/nvme0n1p7-8]
+root          32  0.0  0.0      0     0 ?        S    09:07   0:01  \_ [migration/4]
+root          38  0.0  0.0      0     0 ?        S    09:07   0:01  \_ [migration/6]
+root         294  0.0  0.0      0     0 ?        I<   09:07   0:01  \_ [kworker/13:1H-kblockd]
+root      270799  0.0  0.0      0     0 ?        I    12:09   0:00  \_ [kworker/8:2-events]
+root         538  0.0  0.0      0     0 ?        S    09:07   0:00  \_ [irq/171-iwlwifi:default_queue]
+root      149991  0.0  0.0      0     0 ?        I    10:40   0:00  \_ [kworker/10:0-events]
+root          11  0.0  0.0      0     0 ?        R    09:07   0:00  \_ [kworker/0:1-events]
+root         724  0.0  0.0      0     0 ?        I<   09:07   0:00  \_ [kworker/9:1H-i915_cleanup]
+root      126994  0.0  0.0      0     0 ?        I    10:26   0:00  \_ [kworker/12:4-events]
+root      257506  0.0  0.0      0     0 ?        I    12:01   0:00  \_ [kworker/6:0-events]
+root         295  0.0  0.0      0     0 ?        I<   09:07   0:00  \_ [kworker/14:1H-kblockd]
+root         126  0.0  0.0      0     0 ?        I    09:07   0:00  \_ [kworker/13:1-memcg]
+root      275007  0.0  0.0      0     0 ?        I    12:11   0:00  \_ [kworker/6:2-events]
+root         131  0.0  0.0      0     0 ?        I    09:07   0:00  \_ [kworker/14:1-memcg]
+root         265  0.0  0.0      0     0 ?        I<   09:07   0:00  \_ [kworker/0:1H-kblockd]
+root      262362  0.0  0.0      0     0 ?        I    12:04   0:00  \_ [kworker/15:1-events]
+root          76  0.0  0.0      0     0 ?        I    09:07   0:00  \_ [kworker/15:0-events]
+root         123  0.0  0.0      0     0 ?        S    09:07   0:00  \_ [kcompactd0]
+root        1109  0.0  0.0      0     0 ?        I<   09:08   0:00  \_ [kworker/11:1H-kblockd]
+root         326  0.0  0.0      0     0 ?        I<   09:07   0:00  \_ [kworker/15:1H-kblockd]
+root      263611  0.0  0.0      0     0 ?        I    12:04   0:00  \_ [kworker/1:2-events]
+root         406  0.0  0.0      0     0 ?        I<   09:07   0:00  \_ [kworker/3:1H-kblockd]
+root         255  0.0  0.0      0     0 ?        I    09:07   0:00  \_ [kworker/5:1+events]
+root         155  0.0  0.0      0     0 ?        I    09:07   0:00  \_ [kworker/7:1-events]
+root         154  0.0  0.0      0     0 ?        I    09:07   0:00  \_ [kworker/3:1-cgroup_release]
+root          81  0.0  0.0      0     0 ?        S    09:07   0:00  \_ [ksoftirqd/1]
+root          15  0.0  0.0      0     0 ?        S    09:07   0:00  \_ [ksoftirqd/0]
+root         145  0.0  0.0      0     0 ?        S    09:07   0:00  \_ [hwrng]
+root          19  0.0  0.0      0     0 ?        S    09:07   0:00  \_ [rcu_exp_gp_kthread_worker]
+root      265795  0.0  0.0      0     0 ?        I    12:06   0:00  \_ [kworker/9:0-memcg]
+--- pstree of self ---
+hermes,11523,luffy -m hermes_cli.main gateway run
+  |-timeout,282366 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 11523 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,282377 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 11523 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,282426 -40
+  |       `-pstree,282425 -plau 11523
+  |-{hermes},11633
+  |-{hermes},11634
+  |-{hermes},11635
+  |-{hermes},11647
+  |-{hermes},11648
+  |-{hermes},11765
+  `-{hermes},11766
+--- /proc/loadavg ---
+3.07 2.75 2.03 2/418 282443
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-07-01T16:41:42Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    20:11   0:00 [kthreadd]
+root      197297  1.4  0.0      0     0 ?        I<   22:02   0:08  \_ [kworker/u65:0-i915_flip]
+root      168686  0.9  0.0      0     0 ?        I<   21:46   0:15  \_ [kworker/u65:2-rb_allocator]
+root      188117  0.9  0.0      0     0 ?        I<   21:56   0:08  \_ [kworker/u65:3-rb_allocator]
+root      204888  0.3  0.0      0     0 ?        I    22:06   0:01  \_ [kworker/2:0-memcg]
+root      207534  0.3  0.0      0     0 ?        I<   22:08   0:00  \_ [kworker/u65:1-rb_allocator]
+root      194032  0.2  0.0      0     0 ?        I    22:00   0:01  \_ [kworker/2:1-i915-unordered]
+root          16  0.1  0.0      0     0 ?        I    20:11   0:13  \_ [rcu_preempt]
+root          56  0.1  0.0      0     0 ?        S    20:11   0:12  \_ [migration/12]
+root         130  0.1  0.0      0     0 ?        S    20:11   0:12  \_ [irq/9-acpi]
+root          62  0.1  0.0      0     0 ?        S    20:11   0:08  \_ [migration/13]
+root      162491  0.1  0.0      0     0 ?        I    21:42   0:02  \_ [kworker/2:10-events]
+root          68  0.0  0.0      0     0 ?        S    20:11   0:06  \_ [migration/14]
+root         264  0.0  0.0      0     0 ?        I<   20:11   0:04  \_ [kworker/8:1H-kblockd]
+root      199265  0.0  0.0      0     0 ?        I    22:03   0:00  \_ [kworker/u64:1-flush-259:0]
+root          74  0.0  0.0      0     0 ?        S    20:11   0:04  \_ [migration/15]
+root      211812  0.0  0.0      0     0 ?        I    22:10   0:00  \_ [kworker/u64:0-flush-259:0]
+root      168284  0.0  0.0      0     0 ?        I    21:45   0:00  \_ [kworker/u64:2-events_unbound]
+root         427  0.0  0.0      0     0 ?        I<   20:11   0:04  \_ [kworker/10:1H-kblockd]
+root         366  0.0  0.0      0     0 ?        I<   20:11   0:03  \_ [kworker/4:1H-kblockd]
+root         420  0.0  0.0      0     0 ?        I<   20:11   0:03  \_ [kworker/6:1H-kblockd]
+root       93145  0.0  0.0      0     0 ?        I    21:02   0:02  \_ [kworker/u64:3-events_unbound]
+root         388  0.0  0.0      0     0 ?        I<   20:11   0:03  \_ [kworker/12:1H-kblockd]
+root          44  0.0  0.0      0     0 ?        S    20:11   0:02  \_ [migration/8]
+root         294  0.0  0.0      0     0 ?        I<   20:11   0:02  \_ [kworker/2:1H-kblockd]
+root         292  0.0  0.0      0     0 ?        I<   20:11   0:02  \_ [kworker/13:1H-kblockd]
+root         487  0.0  0.0      0     0 ?        S    20:11   0:02  \_ [irq/169-MSNB0001:00]
+root          81  0.0  0.0      0     0 ?        S    20:11   0:02  \_ [ksoftirqd/1]
+root          50  0.0  0.0      0     0 ?        S    20:11   0:02  \_ [migration/10]
+root         125  0.0  0.0      0     0 ?        SN   20:11   0:02  \_ [khugepaged]
+root          20  0.0  0.0      0     0 ?        S    20:11   0:02  \_ [migration/0]
+root         346  0.0  0.0      0     0 ?        I<   20:11   0:01  \_ [kworker/14:1H-kblockd]
+root          26  0.0  0.0      0     0 ?        S    20:11   0:01  \_ [migration/2]
+root          32  0.0  0.0      0     0 ?        S    20:11   0:01  \_ [migration/4]
+root         331  0.0  0.0      0     0 ?        S    20:11   0:01  \_ [jbd2/nvme0n1p7-8]
+root          38  0.0  0.0      0     0 ?        S    20:11   0:01  \_ [migration/6]
+root         393  0.0  0.0      0     0 ?        I<   20:11   0:01  \_ [kworker/15:1H-kblockd]
+root         532  0.0  0.0      0     0 ?        S    20:11   0:01  \_ [irq/172-iwlwifi:default_queue]
+root         426  0.0  0.0      0     0 ?        I<   20:11   0:01  \_ [kworker/5:1H-kblockd]
+root         423  0.0  0.0      0     0 ?        I<   20:11   0:01  \_ [kworker/11:1H-kblockd]
+root         422  0.0  0.0      0     0 ?        I<   20:11   0:01  \_ [kworker/0:1H-kblockd]
+root         898  0.0  0.0      0     0 ?        I<   20:12   0:01  \_ [kworker/9:1H-kblockd]
+root         406  0.0  0.0      0     0 ?        I<   20:11   0:01  \_ [kworker/7:1H-kblockd]
+root      189496  0.0  0.0      0     0 ?        I    21:57   0:00  \_ [kworker/13:1-rcu_gp]
+root      193410  0.0  0.0      0     0 ?        D    22:00   0:00  \_ [kworker/4:1+events]
+root      202272  0.0  0.0      0     0 ?        I    22:05   0:00  \_ [kworker/0:0-rcu_gp]
+root         421  0.0  0.0      0     0 ?        I<   20:11   0:00  \_ [kworker/1:1H-kblockd]
+root         812  0.0  0.0      0     0 ?        I<   20:11   0:00  \_ [kworker/3:1H-kblockd]
+root          15  0.0  0.0      0     0 ?        S    20:11   0:00  \_ [ksoftirqd/0]
+root       95680  0.0  0.0      0     0 ?        I    21:03   0:00  \_ [kworker/8:0-events]
+root      173258  0.0  0.0      0     0 ?        I    21:49   0:00  \_ [kworker/10:1-memcg]
+root       31347  0.0  0.0      0     0 ?        I    20:25   0:00  \_ [kworker/12:0-memcg]
+root         514  0.0  0.0      0     0 ?        D    20:11   0:00  \_ [kworker/14:2+inode_switch_wbs]
+root      104370  0.0  0.0      0     0 ?        I    21:08   0:00  \_ [kworker/15:0-memcg]
+root      186070  0.0  0.0      0     0 ?        I    21:55   0:00  \_ [kworker/7:2-memcg]
+root      162546  0.0  0.0      0     0 ?        R    21:42   0:00  \_ [kworker/6:3-events]
+root      207354  0.0  0.0      0     0 ?        I    22:08   0:00  \_ [kworker/6:1-memcg]
+root      102776  0.0  0.0      0     0 ?        I    21:07   0:00  \_ [kworker/3:0-rcu_gp]
+root      189750  0.0  0.0      0     0 ?        I    21:57   0:00  \_ [kworker/9:0-memcg]
+--- pstree of self ---
+hermes,749,luffy -m hermes_cli.main gateway run
+  |-timeout,213300 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 749 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,213302 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 749 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,213344 -40
+  |       `-pstree,213343 -plau 749
+  |-{hermes},827
+  |-{hermes},828
+  |-{hermes},829
+  |-{hermes},832
+  |-{hermes},833
+  |-{hermes},1333
+  `-{hermes},1334
+--- /proc/loadavg ---
+4.21 3.75 3.80 9/486 213362
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-07-02T06:54:43Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    09:07   0:00 [kthreadd]
+root     2274840  1.5  0.0      0     0 ?        I<   11:58   0:23  \_ [kworker/u65:2-i915_flip]
+root     2208393  1.4  0.0      0     0 ?        I<   11:53   0:27  \_ [kworker/u65:1-rb_allocator]
+root     1999505  0.6  0.0      0     0 ?        I<   11:36   0:19  \_ [kworker/u65:0-rb_allocator]
+root          16  0.6  0.0      0     0 ?        I    09:07   1:13  \_ [rcu_preempt]
+root     1788171  0.3  0.0      0     0 ?        I    11:19   0:15  \_ [kworker/2:1-memcg]
+root          56  0.3  0.0      0     0 ?        S    09:07   0:38  \_ [migration/12]
+root         131  0.2  0.0      0     0 ?        S    09:07   0:34  \_ [irq/9-acpi]
+root          62  0.2  0.0      0     0 ?        S    09:07   0:33  \_ [migration/13]
+root          68  0.2  0.0      0     0 ?        S    09:07   0:30  \_ [migration/14]
+root          74  0.2  0.0      0     0 ?        S    09:07   0:28  \_ [migration/15]
+root         407  0.1  0.0      0     0 ?        I<   09:07   0:15  \_ [kworker/8:1H-kblockd]
+root         370  0.0  0.0      0     0 ?        I<   09:07   0:11  \_ [kworker/4:1H-kblockd]
+root         408  0.0  0.0      0     0 ?        I<   09:07   0:10  \_ [kworker/10:1H-i915_cleanup]
+root         266  0.0  0.0      0     0 ?        I<   09:07   0:10  \_ [kworker/6:1H-kblockd]
+root         406  0.0  0.0      0     0 ?        I<   09:07   0:07  \_ [kworker/2:1H-kblockd]
+root          44  0.0  0.0      0     0 ?        S    09:07   0:06  \_ [migration/8]
+root          50  0.0  0.0      0     0 ?        S    09:07   0:06  \_ [migration/10]
+root         503  0.0  0.0      0     0 ?        S    09:07   0:05  \_ [irq/168-MSNB0001:00]
+root          20  0.0  0.0      0     0 ?        S    09:07   0:05  \_ [migration/0]
+root          26  0.0  0.0      0     0 ?        S    09:07   0:05  \_ [migration/2]
+root          38  0.0  0.0      0     0 ?        S    09:07   0:04  \_ [migration/6]
+root          32  0.0  0.0      0     0 ?        S    09:07   0:04  \_ [migration/4]
+root     2593289  0.0  0.0      0     0 ?        I    12:24   0:00  \_ [kworker/u64:3-flush-259:0]
+root     2324470  0.0  0.0      0     0 ?        I    12:02   0:00  \_ [kworker/u64:2-flush-259:0]
+root         294  0.0  0.0      0     0 ?        I<   09:07   0:03  \_ [kworker/7:1H-kblockd]
+root     2000364  0.0  0.0      0     0 ?        I    11:36   0:00  \_ [kworker/15:2-events]
+root     1895769  0.0  0.0      0     0 ?        I    11:28   0:00  \_ [kworker/u64:0-ext4-rsv-conversion]
+root         296  0.0  0.0      0     0 ?        I<   09:07   0:02  \_ [kworker/12:1H-kblockd]
+root     1667305  0.0  0.0      0     0 ?        I    11:09   0:00  \_ [kworker/14:1-inode_switch_wbs]
+root     2150970  0.0  0.0      0     0 ?        I    11:48   0:00  \_ [kworker/4:2-cgroup_free]
+root     2043427  0.0  0.0      0     0 ?        I    11:39   0:00  \_ [kworker/13:0-memcg]
+root      938688  0.0  0.0      0     0 ?        I    10:12   0:01  \_ [kworker/12:7-cgroup_offline]
+root        1150  0.0  0.0      0     0 ?        I<   09:07   0:02  \_ [kworker/9:1H-kblockd]
+root     2395565  0.0  0.0      0     0 ?        I    12:08   0:00  \_ [kworker/u64:1-events_unbound]
+root         661  0.0  0.0      0     0 ?        I<   09:07   0:02  \_ [kworker/5:1H-i915_cleanup]
+root         893  0.0  0.0      0     0 ?        I<   09:07   0:02  \_ [kworker/11:1H-kblockd]
+root     1607693  0.0  0.0      0     0 ?        D    11:05   0:00  \_ [kworker/0:2+events]
+root         333  0.0  0.0      0     0 ?        D    09:07   0:01  \_ [jbd2/nvme0n1p7-8]
+root         125  0.0  0.0      0     0 ?        SN   09:07   0:01  \_ [khugepaged]
+root         400  0.0  0.0      0     0 ?        I<   09:07   0:01  \_ [kworker/13:1H-kblockd]
+root          81  0.0  0.0      0     0 ?        S    09:07   0:01  \_ [ksoftirqd/1]
+root         887  0.0  0.0      0     0 ?        I<   09:07   0:01  \_ [kworker/3:1H-kblockd]
+root     2240104  0.0  0.0      0     0 ?        I    11:55   0:00  \_ [kworker/8:0-events]
+root      938662  0.0  0.0      0     0 ?        D    10:12   0:00  \_ [kworker/10:3+events]
+root     2502523  0.0  0.0      0     0 ?        I    12:17   0:00  \_ [kworker/6:0-events]
+root     2360647  0.0  0.0      0     0 ?        I    12:05   0:00  \_ [kworker/6:2-memcg]
+root         537  0.0  0.0      0     0 ?        S    09:07   0:00  \_ [irq/171-iwlwifi:default_queue]
+root         741  0.0  0.0      0     0 ?        I<   09:07   0:00  \_ [kworker/0:1H-kblockd]
+root         809  0.0  0.0      0     0 ?        I<   09:07   0:00  \_ [kworker/1:1H-kblockd]
+root         350  0.0  0.0      0     0 ?        I<   09:07   0:00  \_ [kworker/14:1H-i915_cleanup]
+root         123  0.0  0.0      0     0 ?        S    09:07   0:00  \_ [kcompactd0]
+root     2289123  0.0  0.0      0     0 ?        D    11:59   0:00  \_ [kworker/3:2+inode_switch_wbs]
+root          80  0.0  0.0      0     0 ?        S    09:07   0:00  \_ [migration/1]
+root         295  0.0  0.0      0     0 ?        I<   09:07   0:00  \_ [kworker/15:1H-kblockd]
+root     2233575  0.0  0.0      0     0 ?        I    11:55   0:00  \_ [kworker/1:16-cgroup_release]
+root      896564  0.0  0.0      0     0 ?        I    10:09   0:00  \_ [kworker/5:1-mm_percpu_wq]
+root     2528524  0.0  0.0      0     0 ?        I    12:19   0:00  \_ [kworker/7:2-memcg]
+root      233826  0.0  0.0      0     0 ?        D    09:21   0:00  \_ [kworker/3:0+inode_switch_wbs]
+--- pstree of self ---
+hermes,234521,luffy -m hermes_cli.main gateway run
+  |-timeout,2600075 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 234521 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,2600079 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 234521 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,2600109 -40
+  |       `-pstree,2600108 -plau 234521
+  |-{hermes},237362
+  |-{hermes},237366
+  |-{hermes},237580
+  |-{hermes},237659
+  |-{hermes},237660
+  |-{hermes},238749
+  `-{hermes},238751
+--- /proc/loadavg ---
+3.62 2.97 2.76 6/407 2600137
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-07-02T09:39:56Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    15:02   0:00 [kthreadd]
+root         553  2.2  0.0      0     0 ?        I<   15:02   0:09  \_ [kworker/u65:1-rb_allocator]
+root          16  0.6  0.0      0     0 ?        I    15:02   0:02  \_ [rcu_preempt]
+root         130  0.6  0.0      0     0 ?        S    15:02   0:02  \_ [irq/9-acpi]
+root         163  0.5  0.0      0     0 ?        I<   15:02   0:02  \_ [kworker/u65:0-i915_flip]
+root          56  0.2  0.0      0     0 ?        S    15:02   0:01  \_ [migration/12]
+root          62  0.2  0.0      0     0 ?        S    15:02   0:01  \_ [migration/13]
+root          74  0.2  0.0      0     0 ?        S    15:02   0:01  \_ [migration/15]
+root       76476  0.2  0.0      0     0 ?        I    15:08   0:00  \_ [kworker/2:12-rcu_gp]
+root          68  0.2  0.0      0     0 ?        S    15:02   0:01  \_ [migration/14]
+root         166  0.2  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/2:2-i915-unordered]
+root         125  0.1  0.0      0     0 ?        SN   15:02   0:00  \_ [khugepaged]
+root         267  0.1  0.0      0     0 ?        I<   15:02   0:00  \_ [kworker/8:1H-kblockd]
+root         295  0.0  0.0      0     0 ?        I<   15:02   0:00  \_ [kworker/4:1H-kblockd]
+root         297  0.0  0.0      0     0 ?        I<   15:02   0:00  \_ [kworker/6:1H-kblockd]
+root         523  0.0  0.0      0     0 ?        I<   15:02   0:00  \_ [kworker/2:1H-kblockd]
+root         406  0.0  0.0      0     0 ?        I<   15:02   0:00  \_ [kworker/10:1H-kblockd]
+root         502  0.0  0.0      0     0 ?        S    15:02   0:00  \_ [irq/169-MSNB0001:00]
+root          14  0.0  0.0      0     0 ?        D    15:02   0:00  \_ [kworker/u64:1+netns]
+root       82658  0.0  0.0      0     0 ?        R    15:08   0:00  \_ [kworker/u64:9+events_unbound]
+root          44  0.0  0.0      0     0 ?        S    15:02   0:00  \_ [migration/8]
+root          50  0.0  0.0      0     0 ?        S    15:02   0:00  \_ [migration/10]
+root        3312  0.0  0.0      0     0 ?        I    15:03   0:00  \_ [kworker/u64:7-writeback]
+root         265  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/u64:4-events_unbound]
+root          26  0.0  0.0      0     0 ?        S    15:02   0:00  \_ [migration/2]
+root         158  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/15:1-rcu_gp]
+root         134  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/14:1-memcg]
+root          38  0.0  0.0      0     0 ?        S    15:02   0:00  \_ [migration/6]
+root          20  0.0  0.0      0     0 ?        S    15:02   0:00  \_ [migration/0]
+root          32  0.0  0.0      0     0 ?        S    15:02   0:00  \_ [migration/4]
+root         266  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/u64:5-flush-259:0]
+root         146  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/4:1-memcg]
+root          81  0.0  0.0      0     0 ?        S    15:02   0:00  \_ [ksoftirqd/1]
+root         334  0.0  0.0      0     0 ?        D    15:02   0:00  \_ [jbd2/nvme0n1p7-8]
+root         131  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/12:1-cgroup_offline]
+root          12  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/u64:0-flush-259:0]
+root         861  0.0  0.0      0     0 ?        I<   15:03   0:00  \_ [kworker/5:1H-kblockd]
+root         417  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/13:2-events]
+root         409  0.0  0.0      0     0 ?        I<   15:02   0:00  \_ [kworker/12:1H-kblockd]
+root         232  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/8:1-events]
+root         120  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/u64:2-flush-259:0]
+root           9  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/0:0-cgroup_offline]
+root         252  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/10:1-memcg]
+root         988  0.0  0.0      0     0 ?        I<   15:03   0:00  \_ [kworker/3:1H-kblockd]
+root         535  0.0  0.0      0     0 ?        S    15:02   0:00  \_ [irq/170-iwlwifi:default_queue]
+root         368  0.0  0.0      0     0 ?        I<   15:02   0:00  \_ [kworker/13:1H-kblockd]
+root       76609  0.0  0.0      0     0 ?        I    15:08   0:00  \_ [kworker/8:8-rcu_gp]
+root         576  0.0  0.0      0     0 ?        S    15:02   0:00  \_ [irq/187-AudioDSP]
+root         389  0.0  0.0      0     0 ?        I<   15:02   0:00  \_ [kworker/9:1H-kblockd]
+root         298  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/6:2-events]
+root         154  0.0  0.0      0     0 ?        D    15:02   0:00  \_ [kworker/3:1+events]
+root         157  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/6:1-mm_percpu_wq]
+root         133  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/2:1-kacpi_notify]
+root         127  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/1:1-memcg]
+root          94  0.0  0.0      0     0 ?        I    15:02   0:00  \_ [kworker/5:0-memcg]
+root          98  0.0  0.0      0     0 ?        S    15:02   0:00  \_ [migration/7]
+root         101  0.0  0.0      0     0 ?        I<   15:02   0:00  \_ [kworker/7:0H-kblockd]
+root          19  0.0  0.0      0     0 ?        S    15:02   0:00  \_ [rcu_exp_gp_kthread_worker]
+root         738  0.0  0.0      0     0 ?        I<   15:02   0:00  \_ [kworker/0:1H-kblockd]
+--- pstree of self ---
+hermes,36034,luffy -m hermes_cli.main gateway run
+  |-timeout,107387 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 36034 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,107389 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 36034 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,107428 -40
+  |       `-pstree,107427 -plau 36034
+  |-{hermes},37791
+  |-{hermes},37795
+  |-{hermes},37955
+  |-{hermes},38081
+  |-{hermes},38695
+  `-{hermes},38697
+--- /proc/loadavg ---
+3.38 2.56 1.29 7/440 107493
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-07-02T09:43:20Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    15:12   0:00 [kthreadd]
+root         525  0.4  0.0      0     0 ?        S    15:12   0:00  \_ [nvidia-modeset/kthread_q]
+root         130  0.3  0.0      0     0 ?        S    15:12   0:00  \_ [irq/9-acpi]
+root          12  0.3  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/u64:0-ext4-rsv-conversion]
+root         496  0.3  0.0      0     0 ?        S    15:12   0:00  \_ [irq/169-MSNB0001:00]
+root         139  0.2  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/6:1-events]
+root         120  0.1  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/u64:2-events_unbound]
+root          16  0.1  0.0      0     0 ?        I    15:12   0:00  \_ [rcu_preempt]
+root         260  0.1  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/u64:4-writeback]
+root         530  0.1  0.0      0     0 ?        I<   15:12   0:00  \_ [kworker/u65:2-rb_allocator]
+root         200  0.1  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/8:1-events]
+root          14  0.1  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/u64:1-ext4-rsv-conversion]
+root         569  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [irq/189-AudioDSP]
+root         322  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [jbd2/nvme0n1p7-8]
+root         162  0.0  0.0      0     0 ?        I<   15:12   0:00  \_ [kworker/u65:0-rb_allocator]
+root         148  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [hwrng]
+root         131  0.0  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/12:1-events]
+root          46  0.0  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/8:0-rcu_gp]
+root          56  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [migration/12]
+root        1361  0.0  0.0      0     0 ?        I    15:13   0:00  \_ [kworker/u64:6-events_unbound]
+root         529  0.0  0.0      0     0 ?        I<   15:12   0:00  \_ [kworker/u65:1-rb_allocator]
+root         163  0.0  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/4:1-inode_switch_wbs]
+root         141  0.0  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/15:1-events]
+root         133  0.0  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/14:1-events]
+root         125  0.0  0.0      0     0 ?        SN   15:12   0:00  \_ [khugepaged]
+root         127  0.0  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/13:1-events]
+root          19  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [rcu_exp_gp_kthread_worker]
+root          62  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [migration/13]
+root          68  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [migration/14]
+root          74  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [migration/15]
+root           3  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   15:12   0:00  \_ [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   15:12   0:00  \_ [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   15:12   0:00  \_ [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<   15:12   0:00  \_ [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   15:12   0:00  \_ [kworker/R-netns]
+root           9  0.0  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/0:0-rcu_gp]
+root          10  0.0  0.0      0     0 ?        I<   15:12   0:00  \_ [kworker/0:0H-kblockd]
+root          11  0.0  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/0:1-events]
+root          13  0.0  0.0      0     0 ?        I<   15:12   0:00  \_ [kworker/R-mm_percpu_wq]
+root          15  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [rcub/0]
+root          18  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [rcu_exp_par_gp_kthread_worker/0]
+root          20  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [migration/0]
+root          21  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [kprobe-optimizer]
+root          22  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [idle_inject/0]
+root          23  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [cpuhp/0]
+root          24  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [cpuhp/2]
+root          25  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [idle_inject/2]
+root          26  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [migration/2]
+root          27  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [ksoftirqd/2]
+root          28  0.0  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/2:0-inode_switch_wbs]
+root          29  0.0  0.0      0     0 ?        I<   15:12   0:00  \_ [kworker/2:0H-kblockd]
+root          30  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [cpuhp/4]
+root          31  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [idle_inject/4]
+root          32  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [migration/4]
+root          33  0.0  0.0      0     0 ?        S    15:12   0:00  \_ [ksoftirqd/4]
+root          34  0.0  0.0      0     0 ?        I    15:12   0:00  \_ [kworker/4:0-events]
+root          35  0.0  0.0      0     0 ?        I<   15:12   0:00  \_ [kworker/4:0H-kblockd]
+--- pstree of self ---
+hermes,752,luffy -m hermes_cli.main gateway run
+  |-timeout,3898 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 752 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,3908 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 752 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,3938 -40
+  |       `-pstree,3937 -plau 752
+  |-{hermes},823
+  |-{hermes},824
+  |-{hermes},837
+  |-{hermes},843
+  |-{hermes},844
+  |-{hermes},853
+  `-{hermes},854
+--- /proc/loadavg ---
+1.52 0.36 0.12 4/419 3949
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-07-02T10:58:49Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    15:26   0:00 [kthreadd]
+root      147466  8.9  0.0      0     0 ?        I    16:28   0:00  \_ [kworker/u64:4-flush-259:0]
+root         524  0.9  0.0      0     0 ?        S    15:26   0:35  \_ [nvidia-modeset/kthread_q]
+root         140  0.4  0.0      0     0 ?        S    15:26   0:15  \_ [kswapd0]
+root         502  0.3  0.0      0     0 ?        S    15:26   0:11  \_ [irq/169-MSNB0001:00]
+root          16  0.2  0.0      0     0 ?        I    15:26   0:10  \_ [rcu_preempt]
+root         123  0.1  0.0      0     0 ?        S    15:26   0:06  \_ [kcompactd0]
+root         130  0.1  0.0      0     0 ?        S    15:26   0:06  \_ [irq/9-acpi]
+root         546  0.1  0.0      0     0 ?        S    15:26   0:06  \_ [irq/186-iwlwifi:queue_13]
+root          56  0.1  0.0      0     0 ?        S    15:26   0:05  \_ [migration/12]
+root         547  0.1  0.0      0     0 ?        S    15:26   0:04  \_ [irq/187-iwlwifi:queue_14]
+root          62  0.0  0.0      0     0 ?        S    15:26   0:03  \_ [migration/13]
+root          12  0.0  0.0      0     0 ?        D    15:26   0:03  \_ [kworker/u64:0+events_unbound]
+root          68  0.0  0.0      0     0 ?        S    15:26   0:03  \_ [migration/14]
+root          14  0.0  0.0      0     0 ?        D    15:26   0:02  \_ [kworker/u64:1+netns]
+root         539  0.0  0.0      0     0 ?        S    15:26   0:02  \_ [irq/179-iwlwifi:queue_6]
+root         533  0.0  0.0      0     0 ?        S    15:26   0:02  \_ [irq/173-iwlwifi:default_queue]
+root         543  0.0  0.0      0     0 ?        S    15:26   0:02  \_ [irq/183-iwlwifi:queue_10]
+root         538  0.0  0.0      0     0 ?        S    15:26   0:02  \_ [irq/178-iwlwifi:queue_5]
+root          74  0.0  0.0      0     0 ?        S    15:26   0:02  \_ [migration/15]
+root         541  0.0  0.0      0     0 ?        S    15:26   0:01  \_ [irq/181-iwlwifi:queue_8]
+root         537  0.0  0.0      0     0 ?        S    15:26   0:01  \_ [irq/177-iwlwifi:queue_4]
+root      135808  0.0  0.0      0     0 ?        I    16:21   0:00  \_ [kworker/u64:3-flush-259:0]
+root         125  0.0  0.0      0     0 ?        SN   15:26   0:01  \_ [khugepaged]
+root         534  0.0  0.0      0     0 ?        S    15:26   0:01  \_ [irq/174-iwlwifi:queue_1]
+root       86604  0.0  0.0      0     0 ?        I<   16:11   0:00  \_ [kworker/u65:2-rb_allocator]
+root          44  0.0  0.0      0     0 ?        S    15:26   0:01  \_ [migration/8]
+root         535  0.0  0.0      0     0 ?        S    15:26   0:01  \_ [irq/175-iwlwifi:queue_2]
+root         545  0.0  0.0      0     0 ?        S    15:26   0:01  \_ [irq/185-iwlwifi:queue_12]
+root          20  0.0  0.0      0     0 ?        S    15:26   0:01  \_ [migration/0]
+root          50  0.0  0.0      0     0 ?        S    15:26   0:01  \_ [migration/10]
+root         540  0.0  0.0      0     0 ?        S    15:26   0:01  \_ [irq/180-iwlwifi:queue_7]
+root          26  0.0  0.0      0     0 ?        S    15:26   0:01  \_ [migration/2]
+root         536  0.0  0.0      0     0 ?        S    15:26   0:00  \_ [irq/176-iwlwifi:queue_3]
+root       98877  0.0  0.0      0     0 ?        I    16:13   0:00  \_ [kworker/4:0-cgroup_free]
+root       87482  0.0  0.0      0     0 ?        I    16:11   0:00  \_ [kworker/u64:2-flush-259:0]
+root          32  0.0  0.0      0     0 ?        S    15:26   0:00  \_ [migration/4]
+root          38  0.0  0.0      0     0 ?        S    15:26   0:00  \_ [migration/6]
+root         320  0.0  0.0      0     0 ?        S    15:26   0:00  \_ [jbd2/nvme0n1p7-8]
+root      145876  0.0  0.0      0     0 ?        I    16:27   0:00  \_ [kworker/0:0-events]
+root       26293  0.0  0.0      0     0 ?        I    15:39   0:00  \_ [kworker/6:1-events]
+root      139361  0.0  0.0      0     0 ?        I    16:23   0:00  \_ [kworker/7:2-memcg]
+root       34803  0.0  0.0      0     0 ?        I    15:44   0:00  \_ [kworker/4:1-kacpi_notify]
+root      129853  0.0  0.0      0     0 ?        I<   16:18   0:00  \_ [kworker/u65:0-rb_allocator]
+root         542  0.0  0.0      0     0 ?        S    15:26   0:00  \_ [irq/182-iwlwifi:queue_9]
+root      137286  0.0  0.0      0     0 ?        I    16:22   0:00  \_ [kworker/12:0-events]
+root       50910  0.0  0.0      0     0 ?        I    15:52   0:00  \_ [kworker/0:1-events]
+root      135744  0.0  0.0      0     0 ?        I    16:21   0:00  \_ [kworker/13:1-memcg]
+root       33046  0.0  0.0      0     0 ?        I    15:42   0:00  \_ [kworker/2:2-memcg]
+root       82020  0.0  0.0      0     0 ?        I    16:08   0:00  \_ [kworker/8:0-events]
+root         138  0.0  0.0      0     0 ?        I    15:26   0:00  \_ [kworker/10:1-events]
+root       48403  0.0  0.0      0     0 ?        I    15:50   0:00  \_ [kworker/14:0-kec_query]
+root         146  0.0  0.0      0     0 ?        I    15:26   0:00  \_ [kworker/15:1-cgroup_release]
+root          80  0.0  0.0      0     0 ?        S    15:26   0:00  \_ [migration/1]
+root       34859  0.0  0.0      0     0 ?        I    15:44   0:00  \_ [kworker/5:0-cgroup_bpf_destroy]
+root      142228  0.0  0.0      0     0 ?        I    16:25   0:00  \_ [kworker/4:9-memcg]
+root          15  0.0  0.0      0     0 ?        S    15:26   0:00  \_ [ksoftirqd/0]
+root      136742  0.0  0.0      0     0 ?        I    16:22   0:00  \_ [kworker/4:2-cgroup_release]
+root         104  0.0  0.0      0     0 ?        S    15:26   0:00  \_ [migration/9]
+--- pstree of self ---
+hermes,41536,luffy -m hermes_cli.main gateway run
+  |-timeout,147769 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 41536 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,147770 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 41536 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,147777 -40
+  |       `-pstree,147776 -plau 41536
+  |-{hermes},41626
+  |-{hermes},41628
+  |-{hermes},41666
+  |-{hermes},41670
+  |-{hermes},42133
+  `-{hermes},42134
+--- /proc/loadavg ---
+2.67 2.48 2.20 3/426 147778
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-07-02T19:57:30Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    Jul02   0:00 [kthreadd]
+root         534  1.0  0.0      0     0 ?        S    Jul02   2:23  \_ [nvidia-modeset/kthread_q]
+root          16  0.2  0.0      0     0 ?        I    Jul02   0:38  \_ [rcu_preempt]
+root          56  0.2  0.0      0     0 ?        S    Jul02   0:30  \_ [migration/12]
+root      464900  0.2  0.0      0     0 ?        I<   01:19   0:01  \_ [kworker/u65:3-hci0]
+root         131  0.1  0.0      0     0 ?        S    Jul02   0:27  \_ [irq/9-acpi]
+root      360787  0.1  0.0      0     0 ?        I<   00:26   0:06  \_ [kworker/u65:0-hci0]
+root      455188  0.1  0.0      0     0 ?        I<   01:14   0:01  \_ [kworker/u65:2-hci0]
+root          62  0.1  0.0      0     0 ?        S    Jul02   0:18  \_ [migration/13]
+root          68  0.0  0.0      0     0 ?        S    Jul02   0:13  \_ [migration/14]
+root          74  0.0  0.0      0     0 ?        S    Jul02   0:10  \_ [migration/15]
+root         123  0.0  0.0      0     0 ?        S    Jul02   0:07  \_ [kcompactd0]
+root          44  0.0  0.0      0     0 ?        S    Jul02   0:06  \_ [migration/8]
+root          20  0.0  0.0      0     0 ?        S    Jul02   0:05  \_ [migration/0]
+root          50  0.0  0.0      0     0 ?        S    Jul02   0:04  \_ [migration/10]
+root          26  0.0  0.0      0     0 ?        S    Jul02   0:04  \_ [migration/2]
+root      479643  0.0  0.0      0     0 ?        I    01:25   0:00  \_ [kworker/4:1-cgwb_release]
+root         321  0.0  0.0      0     0 ?        S    Jul02   0:04  \_ [jbd2/nvme0n1p7-8]
+root      398271  0.0  0.0      0     0 ?        I    00:45   0:00  \_ [kworker/u64:7-writeback]
+root      428333  0.0  0.0      0     0 ?        I    01:01   0:00  \_ [kworker/u64:1-flush-259:0]
+root      465983  0.0  0.0      0     0 ?        I    01:20   0:00  \_ [kworker/u64:6-flush-259:0]
+root          32  0.0  0.0      0     0 ?        S    Jul02   0:03  \_ [migration/4]
+root         125  0.0  0.0      0     0 ?        SN   Jul02   0:03  \_ [khugepaged]
+root         540  0.0  0.0      0     0 ?        S    Jul02   0:03  \_ [irq/172-iwlwifi:default_queue]
+root          38  0.0  0.0      0     0 ?        S    Jul02   0:03  \_ [migration/6]
+root      429644  0.0  0.0      0     0 ?        I    01:01   0:00  \_ [kworker/u64:8-flush-259:0]
+root      476533  0.0  0.0      0     0 ?        D    01:24   0:00  \_ [kworker/u64:10+events_unbound]
+root      476530  0.0  0.0      0     0 ?        I    01:24   0:00  \_ [kworker/u64:9-events_unbound]
+root      465980  0.0  0.0      0     0 ?        I    01:20   0:00  \_ [kworker/u64:3-flush-259:0]
+root      465981  0.0  0.0      0     0 ?        I    01:20   0:00  \_ [kworker/u64:4-iou_exit]
+root      390238  0.0  0.0      0     0 ?        I    00:41   0:00  \_ [kworker/0:2-rcu_gp]
+root      444501  0.0  0.0      0     0 ?        I    01:08   0:00  \_ [kworker/4:2-events]
+root      393453  0.0  0.0      0     0 ?        I    00:42   0:00  \_ [kworker/u64:0-iou_exit]
+root      401830  0.0  0.0      0     0 ?        I    00:47   0:00  \_ [kworker/2:0-memcg]
+root          15  0.0  0.0      0     0 ?        S    Jul02   0:01  \_ [ksoftirqd/0]
+root          81  0.0  0.0      0     0 ?        S    Jul02   0:01  \_ [ksoftirqd/1]
+root      457789  0.0  0.0      0     0 ?        I    01:16   0:00  \_ [kworker/10:1-memcg]
+root      467360  0.0  0.0      0     0 ?        I    01:21   0:00  \_ [kworker/13:1-memcg]
+root      427206  0.0  0.0      0     0 ?        I    01:01   0:00  \_ [kworker/14:0-memcg]
+root          76  0.0  0.0      0     0 ?        I    Jul02   0:01  \_ [kworker/15:0-rcu_gp]
+root      466823  0.0  0.0      0     0 ?        I    01:20   0:00  \_ [kworker/12:0-events]
+root         501  0.0  0.0      0     0 ?        S    Jul02   0:01  \_ [irq/169-MSNB0001:00]
+root      465979  0.0  0.0      0     0 ?        I    01:20   0:00  \_ [kworker/u64:2-flush-259:0]
+root      419411  0.0  0.0      0     0 ?        I    00:57   0:00  \_ [kworker/6:2-events]
+root      460131  0.0  0.0      0     0 ?        I    01:17   0:00  \_ [kworker/5:0-memcg]
+root      448621  0.0  0.0      0     0 ?        I    01:11   0:00  \_ [kworker/6:1-events]
+root      423697  0.0  0.0      0     0 ?        I    00:59   0:00  \_ [kworker/8:2-events]
+root         543  0.0  0.0      0     0 ?        S    Jul02   0:00  \_ [irq/175-iwlwifi:queue_3]
+root      387668  0.0  0.0      0     0 ?        I    00:39   0:00  \_ [kworker/8:0-cgroup_bpf_destroy]
+root          80  0.0  0.0      0     0 ?        S    Jul02   0:00  \_ [migration/1]
+root      404529  0.0  0.0      0     0 ?        I    00:48   0:00  \_ [kworker/1:2-cgwb_release]
+root      356146  0.0  0.0      0     0 ?        I    00:23   0:00  \_ [kworker/12:2-rcu_gp]
+root      407626  0.0  0.0      0     0 ?        I    00:50   0:00  \_ [kworker/7:0-events]
+root         104  0.0  0.0      0     0 ?        S    Jul02   0:00  \_ [migration/9]
+root      453640  0.0  0.0      0     0 ?        R    01:13   0:00  \_ [kworker/9:2+rcu_gp]
+root         554  0.0  0.0      0     0 ?        S    Jul02   0:00  \_ [irq/186-iwlwifi:queue_14]
+root         552  0.0  0.0      0     0 ?        S    Jul02   0:00  \_ [irq/184-iwlwifi:queue_12]
+root         551  0.0  0.0      0     0 ?        S    Jul02   0:00  \_ [irq/183-iwlwifi:queue_11]
+root          86  0.0  0.0      0     0 ?        S    Jul02   0:00  \_ [migration/3]
+--- pstree of self ---
+hermes,50141,luffy -m hermes_cli.main gateway run
+  |-timeout,483075 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 50141 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,483084 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 50141 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,483117 -40
+  |       `-pstree,483116 -plau 50141
+  |-{hermes},50335
+  |-{hermes},50336
+  |-{hermes},50403
+  |-{hermes},50406
+  |-{hermes},50519
+  `-{hermes},50520
+--- /proc/loadavg ---
+3.07 3.11 2.98 3/422 483130
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-07-03T14:08:29Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    17:55   0:00 [kthreadd]
+root      192344  1.7  0.0      0     0 ?        D    19:38   0:00  \_ [kworker/u64:4+events_unbound]
+root         551  0.9  0.0      0     0 ?        S    17:55   1:01  \_ [nvidia-modeset/kthread_q]
+root          16  0.3  0.0      0     0 ?        I    17:55   0:20  \_ [rcu_preempt]
+root          56  0.2  0.0      0     0 ?        S    17:55   0:14  \_ [migration/12]
+root         131  0.1  0.0      0     0 ?        S    17:55   0:09  \_ [irq/9-acpi]
+root          62  0.1  0.0      0     0 ?        S    17:55   0:09  \_ [migration/13]
+root          68  0.1  0.0      0     0 ?        S    17:55   0:06  \_ [migration/14]
+root          74  0.0  0.0      0     0 ?        S    17:55   0:05  \_ [migration/15]
+root      188068  0.0  0.0      0     0 ?        D    19:37   0:00  \_ [kworker/u64:3+netns]
+root          44  0.0  0.0      0     0 ?        S    17:55   0:02  \_ [migration/8]
+root      182970  0.0  0.0      0     0 ?        I<   19:34   0:00  \_ [kworker/u65:0-rb_allocator]
+root         125  0.0  0.0      0     0 ?        SN   17:55   0:02  \_ [khugepaged]
+root          50  0.0  0.0      0     0 ?        S    17:55   0:02  \_ [migration/10]
+root          20  0.0  0.0      0     0 ?        S    17:55   0:02  \_ [migration/0]
+root      173832  0.0  0.0      0     0 ?        I<   19:29   0:00  \_ [kworker/u65:1-rb_allocator]
+root          26  0.0  0.0      0     0 ?        S    17:55   0:02  \_ [migration/2]
+root      130566  0.0  0.0      0     0 ?        I    19:03   0:00  \_ [kworker/u64:2-events_unbound]
+root      169485  0.0  0.0      0     0 ?        R    19:26   0:00  \_ [kworker/u64:0+events_unbound]
+root         535  0.0  0.0      0     0 ?        S    17:55   0:01  \_ [irq/171-iwlwifi:default_queue]
+root          32  0.0  0.0      0     0 ?        S    17:55   0:01  \_ [migration/4]
+root         321  0.0  0.0      0     0 ?        S    17:55   0:01  \_ [jbd2/nvme0n1p7-8]
+root          38  0.0  0.0      0     0 ?        S    17:55   0:01  \_ [migration/6]
+root      160781  0.0  0.0      0     0 ?        I    19:20   0:00  \_ [kworker/u64:1-flush-259:0]
+root      138124  0.0  0.0      0     0 ?        I<   19:07   0:00  \_ [kworker/u65:2-rb_allocator]
+root      184544  0.0  0.0      0     0 ?        I    19:35   0:00  \_ [kworker/0:0-rcu_gp]
+root      188249  0.0  0.0      0     0 ?        I    19:37   0:00  \_ [kworker/3:0-events]
+root      128455  0.0  0.0      0     0 ?        I    19:01   0:00  \_ [kworker/0:2-events]
+root          15  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [ksoftirqd/0]
+root          81  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [ksoftirqd/1]
+root      172263  0.0  0.0      0     0 ?        I    19:28   0:00  \_ [kworker/8:2-cgroup_free]
+root      173921  0.0  0.0      0     0 ?        I    19:29   0:00  \_ [kworker/2:2-cgroup_free]
+root       69241  0.0  0.0      0     0 ?        I    18:28   0:00  \_ [kworker/0:1-events]
+root      131564  0.0  0.0      0     0 ?        I    19:03   0:00  \_ [kworker/10:0-events]
+root      175481  0.0  0.0      0     0 ?        I    19:30   0:00  \_ [kworker/13:0-events]
+root         545  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [irq/181-iwlwifi:queue_10]
+root         158  0.0  0.0      0     0 ?        I    17:55   0:00  \_ [kworker/15:1-rcu_gp]
+root       23249  0.0  0.0      0     0 ?        I    18:04   0:00  \_ [kworker/4:1-events]
+root      112955  0.0  0.0      0     0 ?        I    18:53   0:00  \_ [kworker/14:0-rcu_gp]
+root      133869  0.0  0.0      0     0 ?        I    19:04   0:00  \_ [kworker/12:0-cgroup_release]
+root      180215  0.0  0.0      0     0 ?        I    19:33   0:00  \_ [kworker/6:0-events]
+root          87  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [ksoftirqd/3]
+root      141005  0.0  0.0      0     0 ?        I    19:09   0:00  \_ [kworker/6:3-events]
+root      153605  0.0  0.0      0     0 ?        I    19:16   0:00  \_ [kworker/6:1-events]
+root          80  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [migration/1]
+root      181711  0.0  0.0      0     0 ?        I    19:34   0:00  \_ [kworker/9:2-events]
+root      138363  0.0  0.0      0     0 ?        I    19:07   0:00  \_ [kworker/5:2-events]
+root         547  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [irq/183-iwlwifi:queue_12]
+root         104  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [migration/9]
+root         123  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [kcompactd0]
+root          19  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [rcu_exp_gp_kthread_worker]
+root         540  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [irq/176-iwlwifi:queue_5]
+root          86  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [migration/3]
+root      132411  0.0  0.0      0     0 ?        I    19:04   0:00  \_ [kworker/1:0-events]
+root         538  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [irq/174-iwlwifi:queue_3]
+root         110  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [migration/11]
+root         549  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [irq/185-iwlwifi:queue_14]
+root         539  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [irq/175-iwlwifi:queue_4]
+root         541  0.0  0.0      0     0 ?        S    17:55   0:00  \_ [irq/177-iwlwifi:queue_6]
+--- pstree of self ---
+hermes,765,luffy -m hermes_cli.main gateway run
+  |-timeout,192634 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 765 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,192636 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 765 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,192653 -40
+  |       `-pstree,192652 -plau 765
+  |-{hermes},844
+  |-{hermes},846
+  |-{hermes},854
+  |-{hermes},861
+  |-{hermes},862
+  |-{hermes},918
+  `-{hermes},919
+--- /proc/loadavg ---
+3.64 2.82 2.62 6/460 192666
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-07-03T17:56:32Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    19:40   0:00 [kthreadd]
+root      426556  0.7  0.0      0     0 ?        I<   23:13   0:06  \_ [kworker/u65:0-hci0]
+root      381827  0.7  0.0      0     0 ?        I<   22:47   0:17  \_ [kworker/u65:4-hci0]
+root      443766  0.7  0.0      0     0 ?        I<   23:23   0:01  \_ [kworker/u65:3-hci0]
+root      313934  0.6  0.0      0     0 ?        I<   22:14   0:27  \_ [kworker/u65:2-rb_allocator]
+root      438939  0.5  0.0      0     0 ?        I<   23:20   0:01  \_ [kworker/u65:1-rb_allocator]
+root         130  0.2  0.0      0     0 ?        S    19:40   0:30  \_ [irq/9-acpi]
+root          56  0.2  0.0      0     0 ?        S    19:40   0:27  \_ [migration/12]
+root      431454  0.1  0.0      0     0 ?        D    23:16   0:01  \_ [kworker/2:2+events]
+root          16  0.1  0.0      0     0 ?        I    19:40   0:25  \_ [rcu_preempt]
+root          62  0.1  0.0      0     0 ?        S    19:40   0:17  \_ [migration/13]
+root          68  0.0  0.0      0     0 ?        S    19:40   0:12  \_ [migration/14]
+root      409937  0.0  0.0      0     0 ?        I    23:04   0:01  \_ [kworker/2:0-kec_query]
+root          74  0.0  0.0      0     0 ?        S    19:40   0:09  \_ [migration/15]
+root         497  0.0  0.0      0     0 ?        I<   19:40   0:08  \_ [kworker/8:1H-kblockd]
+root         295  0.0  0.0      0     0 ?        I<   19:40   0:07  \_ [kworker/4:1H-kblockd]
+root      417726  0.0  0.0      0     0 ?        I    23:08   0:00  \_ [kworker/u64:5-writeback]
+root      407237  0.0  0.0      0     0 ?        I    23:02   0:00  \_ [kworker/u64:3-writeback]
+root         293  0.0  0.0      0     0 ?        I<   19:40   0:06  \_ [kworker/10:1H-kblockd]
+root         266  0.0  0.0      0     0 ?        I<   19:40   0:06  \_ [kworker/6:1H-kblockd]
+root         347  0.0  0.0      0     0 ?        I<   19:40   0:06  \_ [kworker/12:1H-kblockd]
+root         326  0.0  0.0      0     0 ?        I<   19:40   0:05  \_ [kworker/13:1H-i915_cleanup]
+root          44  0.0  0.0      0     0 ?        S    19:40   0:05  \_ [migration/8]
+root         294  0.0  0.0      0     0 ?        I<   19:40   0:05  \_ [kworker/2:1H-i915_cleanup]
+root      417725  0.0  0.0      0     0 ?        I    23:08   0:00  \_ [kworker/u64:2-writeback]
+root          50  0.0  0.0      0     0 ?        S    19:40   0:04  \_ [migration/10]
+root         395  0.0  0.0      0     0 ?        I<   19:40   0:04  \_ [kworker/14:1H-i915_cleanup]
+root          20  0.0  0.0      0     0 ?        S    19:40   0:04  \_ [migration/0]
+root         545  0.0  0.0      0     0 ?        S    19:40   0:04  \_ [irq/172-iwlwifi:default_queue]
+root          26  0.0  0.0      0     0 ?        S    19:40   0:03  \_ [migration/2]
+root      436896  0.0  0.0      0     0 ?        I    23:19   0:00  \_ [kworker/3:2-events]
+root      416630  0.0  0.0      0     0 ?        I    23:07   0:00  \_ [kworker/u64:1-events_unbound]
+root         332  0.0  0.0      0     0 ?        S    19:40   0:03  \_ [jbd2/nvme0n1p7-8]
+root         125  0.0  0.0      0     0 ?        SN   19:40   0:03  \_ [khugepaged]
+root         388  0.0  0.0      0     0 ?        I<   19:40   0:03  \_ [kworker/15:1H-kblockd]
+root          32  0.0  0.0      0     0 ?        S    19:40   0:02  \_ [migration/4]
+root          38  0.0  0.0      0     0 ?        S    19:40   0:02  \_ [migration/6]
+root         123  0.0  0.0      0     0 ?        S    19:40   0:02  \_ [kcompactd0]
+root         808  0.0  0.0      0     0 ?        I<   19:40   0:02  \_ [kworker/0:1H-kblockd]
+root         737  0.0  0.0      0     0 ?        I<   19:40   0:02  \_ [kworker/9:1H-kblockd]
+root         141  0.0  0.0      0     0 ?        S    19:40   0:02  \_ [kswapd0]
+root         796  0.0  0.0      0     0 ?        I<   19:40   0:02  \_ [kworker/1:1H-kblockd]
+root         403  0.0  0.0      0     0 ?        I<   19:40   0:02  \_ [kworker/5:1H-i915_cleanup]
+root      422255  0.0  0.0      0     0 ?        I    23:11   0:00  \_ [kworker/0:2-rcu_gp]
+root         938  0.0  0.0      0     0 ?        I<   19:40   0:01  \_ [kworker/11:1H-kblockd]
+root         683  0.0  0.0      0     0 ?        I<   19:40   0:01  \_ [kworker/7:1H-kblockd]
+root      377190  0.0  0.0      0     0 ?        I    22:45   0:00  \_ [kworker/4:2-events]
+root         883  0.0  0.0      0     0 ?        I<   19:40   0:01  \_ [kworker/3:1H-kblockd]
+root          15  0.0  0.0      0     0 ?        S    19:40   0:01  \_ [ksoftirqd/0]
+root      426021  0.0  0.0      0     0 ?        R    23:13   0:00  \_ [kworker/8:2-memcg]
+root      313958  0.0  0.0      0     0 ?        I    22:14   0:00  \_ [kworker/13:0-inode_switch_wbs]
+root      434090  0.0  0.0      0     0 ?        I    23:17   0:00  \_ [kworker/12:2-events]
+root         133  0.0  0.0      0     0 ?        I    19:40   0:01  \_ [kworker/15:1-events]
+root      365402  0.0  0.0      0     0 ?        R    22:38   0:00  \_ [kworker/10:0+cgwb_release]
+root         550  0.0  0.0      0     0 ?        S    19:40   0:01  \_ [irq/177-iwlwifi:queue_5]
+root         557  0.0  0.0      0     0 ?        S    19:40   0:01  \_ [irq/184-iwlwifi:queue_12]
+root      185122  0.0  0.0      0     0 ?        I    21:04   0:00  \_ [kworker/14:2-cgroup_bpf_destroy]
+root          81  0.0  0.0      0     0 ?        S    19:40   0:01  \_ [ksoftirqd/1]
+root         558  0.0  0.0      0     0 ?        S    19:40   0:00  \_ [irq/185-iwlwifi:queue_13]
+--- pstree of self ---
+hermes,12182,luffy -m hermes_cli.main gateway run
+  |-timeout,449134 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 12182 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,449143 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 12182 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,449186 -40
+  |       `-pstree,449185 -plau 12182
+  |-{hermes},12339
+  |-{hermes},12340
+  |-{hermes},12348
+  |-{hermes},12384
+  |-{hermes},12386
+  |-{hermes},12543
+  `-{hermes},12545
+--- /proc/loadavg ---
+2.96 2.79 2.74 4/439 449217
+--- recent dmesg (oom/killed) ---
+=== end ===

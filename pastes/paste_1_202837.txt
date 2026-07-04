@@ -1,0 +1,156 @@
+       /home/luffy/.local/share/fonts/fontpatcher/src/glyphs/materialdesign
+        /home/luffy/.local/share/fonts/fontpatcher/src/glyphs/octicons
+        /home/luffy/.local/share/fonts/fontpatcher/src/glyphs/pomicons
+        /home/luffy/.local/share/fonts/fontpatcher/src/glyphs/powerline-extra
+        /home/luffy/.local/share/fonts/fontpatcher/src/glyphs/powerline-symbols
+        /home/luffy/.local/share/fonts/fontpatcher/src/glyphs/weather-icons
+        /home/luffy/.local/share/fonts/nerd-fonts/.git/logs/refs
+        /home/luffy/.local/share/fonts/nerd-fonts/.git/objects/info
+        /home/luffy/.local/share/fonts/nerd-fonts/.git/objects/pack
+        /home/luffy/.local/share/fonts/nerd-fonts/.git/refs/heads
+        /home/luffy/.local/share/fonts/nerd-fonts/.git/refs/remotes
+        /home/luffy/.local/share/fonts/nerd-fonts/.git/refs/tags
+        /home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/codicons
+        /home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/devicons
+        /home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/font-awesome
+        /home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/materialdesign
+        /home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/octicons
+        /home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/pomicons
+        /home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/powerline-extra
+        /home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/powerline-symbols
+        /home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/weather-icons
+        /home/luffy/.local/share/fonts/fontpatcher/bin/scripts/name_parser/__pycache__
+        /home/luffy/.local/share/fonts/fontpatcher/src/glyphs/devicons/fixed
+        /home/luffy/.local/share/fonts/fontpatcher/src/glyphs/devicons/vorillaz
+        /home/luffy/.local/share/fonts/nerd-fonts/.git/logs/refs/heads
+        /home/luffy/.local/share/fonts/nerd-fonts/.git/logs/refs/remotes
+        /home/luffy/.local/share/fonts/nerd-fonts/.git/refs/remotes/origin
+        /home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/devicons/fixed
+        /home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/devicons/vorillaz
+        /home/luffy/.local/share/fonts/nerd-fonts/.git/logs/refs/remotes/origin
+/home/luffy/.local/share/fonts: caching, new cache contents: 3 fonts, 2 dirs
+/home/luffy/.local/share/fonts/fontpatcher: caching, new cache contents: 0 fonts, 2 dirs
+/home/luffy/.local/share/fonts/fontpatcher/bin: caching, new cache contents: 0 fonts, 1 dirs
+/home/luffy/.local/share/fonts/fontpatcher/bin/scripts: caching, new cache contents: 0 fonts, 1 dirs
+/home/luffy/.local/share/fonts/fontpatcher/bin/scripts/name_parser: caching, new cache contents: 0 fonts, 1 dirs
+/home/luffy/.local/share/fonts/fontpatcher/bin/scripts/name_parser/__pycache__: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/fontpatcher/src: caching, new cache contents: 0 fonts, 1 dirs
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs: caching, new cache contents: 4 fonts, 9 dirs
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/codicons: caching, new cache contents: 2 fonts, 0 dirs
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/devicons: caching, new cache contents: 1 fonts, 2 dirs
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/devicons/fixed: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/devicons/vorillaz: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/font-awesome: caching, new cache contents: 1 fonts, 0 dirs
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/materialdesign: caching, new cache contents: 3 fonts, 0 dirs
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/octicons: caching, new cache contents: 1 fonts, 0 dirs
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/pomicons: caching, new cache contents: 1 fonts, 0 dirs
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/powerline-extra: caching, new cache contents: 1 fonts, 0 dirs
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/powerline-symbols: caching, new cache contents: 1 fonts, 0 dirs
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/weather-icons: caching, new cache contents: 1 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts: caching, new cache contents: 0 fonts, 3 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git: caching, new cache contents: 0 fonts, 5 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/hooks: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/info: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/logs: caching, new cache contents: 0 fonts, 1 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/logs/refs: caching, new cache contents: 0 fonts, 2 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/logs/refs/heads: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/logs/refs/remotes: caching, new cache contents: 0 fonts, 1 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/logs/refs/remotes/origin: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/objects: caching, new cache contents: 0 fonts, 2 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/objects/info: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/objects/pack: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/refs: caching, new cache contents: 0 fonts, 3 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/refs/heads: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/refs/remotes: caching, new cache contents: 0 fonts, 1 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/refs/remotes/origin: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/.git/refs/tags: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/patched: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/src: caching, new cache contents: 0 fonts, 1 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs: caching, new cache contents: 4 fonts, 9 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/codicons: caching, new cache contents: 2 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/devicons: caching, new cache contents: 1 fonts, 2 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/devicons/fixed: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/devicons/vorillaz: caching, new cache contents: 0 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/font-awesome: caching, new cache contents: 1 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/materialdesign: caching, new cache contents: 3 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/octicons: caching, new cache contents: 1 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/pomicons: caching, new cache contents: 1 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/powerline-extra: caching, new cache contents: 1 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/powerline-symbols: caching, new cache contents: 1 fonts, 0 dirs
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/weather-icons: caching, new cache contents: 1 fonts, 0 dirs
+/usr/local/share/fonts: skipping, no such directory
+/usr/share/fonts: caching, new cache contents: 0 fonts, 8 dirs
+/usr/share/fonts/Adwaita: caching, new cache contents: 24 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 3 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 71 fonts, 0 dirs
+/usr/share/fonts/adobe-source-code-pro: caching, new cache contents: 30 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/gnu-free: caching, new cache contents: 12 fonts, 0 dirs
+/usr/share/fonts/liberation: caching, new cache contents: 12 fonts, 0 dirs
+/usr/share/fonts/noto: caching, new cache contents: 622 fonts, 0 dirs
+/home/luffy/.fonts: caching, new cache contents: 108 fonts, 0 dirs
+/home/luffy/.local/share/fonts/fontpatcher: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts: skipping, looped directory detected
+/usr/share/fonts/Adwaita: skipping, looped directory detected
+/usr/share/fonts/OTF: skipping, looped directory detected
+/usr/share/fonts/TTF: skipping, looped directory detected
+/usr/share/fonts/adobe-source-code-pro: skipping, looped directory detected
+/usr/share/fonts/encodings: skipping, looped directory detected
+/usr/share/fonts/gnu-free: skipping, looped directory detected
+/usr/share/fonts/liberation: skipping, looped directory detected
+/usr/share/fonts/noto: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/bin: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/src: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/patched: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/src: skipping, looped directory detected
+/usr/share/fonts/encodings/large: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/bin/scripts: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/hooks: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/info: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/logs: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/objects: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/refs: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/bin/scripts/name_parser: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/codicons: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/devicons: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/font-awesome: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/materialdesign: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/octicons: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/pomicons: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/powerline-extra: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/powerline-symbols: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/weather-icons: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/logs/refs: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/objects/info: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/objects/pack: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/refs/heads: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/refs/remotes: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/refs/tags: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/codicons: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/devicons: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/font-awesome: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/materialdesign: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/octicons: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/pomicons: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/powerline-extra: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/powerline-symbols: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/weather-icons: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/bin/scripts/name_parser/__pycache__: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/devicons/fixed: skipping, looped directory detected
+/home/luffy/.local/share/fonts/fontpatcher/src/glyphs/devicons/vorillaz: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/logs/refs/heads: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/logs/refs/remotes: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/refs/remotes/origin: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/devicons/fixed: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/src/glyphs/devicons/vorillaz: skipping, looped directory detected
+/home/luffy/.local/share/fonts/nerd-fonts/.git/logs/refs/remotes/origin: skipping, looped directory detected
+/var/cache/fontconfig: not cleaning unwritable cache directory
+/home/luffy/.cache/fontconfig: cleaning cache directory
+/home/luffy/.fontconfig: not cleaning non-existent cache directory
+fc-cache: succeeded
+~/.local/share/fonts
+❯

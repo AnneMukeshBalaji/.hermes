@@ -1,0 +1,611 @@
+
+=== hermes update started 2026-06-25T12:31:41 ===
+⚕ Updating Hermes Agent...
+
+→ Fetching updates...
+→ Local changes detected — stashing before update...
+→ Found 12847 new commit(s)
+  ✓ Pre-update snapshot: 20260625-070238-pre-update
+→ Pulling updates...
+
+⚠ Local changes were stashed before updating.
+  Restoring them may reapply local customizations onto the updated codebase.
+  Review the result afterward if Hermes behaves unexpectedly.
+Restore local changes now? [Y/n]
+Skipped restoring local changes.
+Your changes are still preserved in git stash.
+Restore manually with: git stash apply 22574d18599208e9655c10a4e6a0b1b40e9a4b17
+  ✓ Cleared 90 stale __pycache__ directories
+→ Updating Python dependencies...
+
+→ Refreshing 10 active lazy backend(s)...
+  ↑ 2 refreshed: platform.slack, platform.teams
+  ✓ 8 already current
+→ Updating Node.js dependencies...
+  ✓ repo root + ui-tui, web workspaces (desktop skipped)
+→ Building web UI...
+    
+    > web@0.0.0 build
+    > tsc -b && vite build
+    
+    vite v8.0.16 building client environment for production...
+    [2K
+    transforming...✓ 2132 modules transformed.
+    rendering chunks...
+    computing gzip size...
+    ../hermes_cli/web_dist/index.html                                         0.51 kB │ gzip:   0.32 kB
+    ../hermes_cli/web_dist/assets/Mondwest-Regular-CWscgue7.woff2            23.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Regular-l8uVympt.woff2       33.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Bold-DZA7s8Pa.woff2          35.01 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Regular-BSXFyF4x.woff2     37.76 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Medium-CA76_CrB.woff2      38.84 kB
+    ../hermes_cli/web_dist/assets/Collapse-Bold-mgICk9-_.woff2               59.14 kB
+    ../hermes_cli/web_dist/assets/Collapse-Regular-DysayoTY.woff2            62.81 kB
+    ../hermes_cli/web_dist/assets/filler-bg0-DxMaWJpb.webp                  185.27 kB
+    ../hermes_cli/web_dist/assets/index-CRVRXdmf.css                        110.51 kB │ gzip:  17.64 kB
+    ../hermes_cli/web_dist/assets/index-DQScGvQb.js                       1,902.86 kB │ gzip: 541.25 kB
+    
+    [plugin builtin:vite-reporter]
+    (!) Some chunks are larger than 500 kB after minification. Consider:
+    - Using dynamic import() to code-split the application
+    - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+    - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+    ✓ built in 1.11s
+  ✓ Web UI built
+
+✓ Code updated!
+  ✓ Model catalog cache refreshed from checkout
+
+→ Syncing bundled skills...
+  ✓ Skills are up to date
+
+→ Syncing bundled skills to all profiles...
+  default: up to date
+
+→ Checking configuration for new options...
+  ✓ Configuration is up to date
+
+✓ Update complete!
+
+Tip: You can now select a provider and model:
+  hermes model              # Select provider and model
+
+=== hermes update started 2026-06-25T22:20:03 ===
+⚕ Updating Hermes Agent...
+
+→ Fetching updates...
+→ Found 6 new commit(s)
+  ✓ Pre-update snapshot: 20260625-165007-pre-update
+→ Pulling updates...
+  ✓ Cleared 90 stale __pycache__ directories
+→ Updating Python dependencies...
+
+→ Refreshing 10 active lazy backend(s)...
+  ✓ 10 already current
+→ Updating Node.js dependencies...
+  ✓ repo root + ui-tui, web workspaces (desktop skipped)
+
+✓ Code updated!
+  ✓ Model catalog cache refreshed from checkout
+
+→ Syncing bundled skills...
+  ✓ Skills are up to date
+
+→ Syncing bundled skills to all profiles...
+  default: up to date
+
+→ Checking configuration for new options...
+  ✓ Configuration is up to date
+
+✓ Update complete!
+
+Tip: You can now select a provider and model:
+  hermes model              # Select provider and model
+
+=== hermes update started 2026-06-26T19:59:29 ===
+⚕ Updating Hermes Agent...
+
+→ Discarded npm lockfile churn (1 file(s))
+→ Fetching updates...
+→ Found 164 new commit(s)
+  ✓ Pre-update snapshot: 20260626-142936-pre-update
+→ Pulling updates...
+  ✓ Cleared 93 stale __pycache__ directories
+→ Updating Python dependencies...
+
+→ Refreshing 11 active lazy backend(s)...
+  ✓ 11 already current
+→ Updating Node.js dependencies...
+  ✓ repo root + ui-tui, web workspaces (desktop skipped)
+→ Building web UI...
+    
+    > web@0.0.0 build
+    > tsc -b && vite build
+    
+    vite v8.1.0 building client environment for production...
+    [2K
+    transforming...✓ 480 modules transformed.
+    rendering chunks...
+    computing gzip size...
+    ../hermes_cli/web_dist/index.html                                         0.51 kB │ gzip:   0.32 kB
+    ../hermes_cli/web_dist/assets/Mondwest-Regular-CWscgue7.woff2            23.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Regular-l8uVympt.woff2       33.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Bold-DZA7s8Pa.woff2          35.01 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Regular-BSXFyF4x.woff2     37.76 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Medium-CA76_CrB.woff2      38.84 kB
+    ../hermes_cli/web_dist/assets/Collapse-Bold-mgICk9-_.woff2               59.14 kB
+    ../hermes_cli/web_dist/assets/Collapse-Regular-DysayoTY.woff2            62.81 kB
+    ../hermes_cli/web_dist/assets/filler-bg0-DxMaWJpb.webp                  185.27 kB
+    ../hermes_cli/web_dist/assets/index-Bq6BJgNT.css                        110.70 kB │ gzip:  17.65 kB
+    ../hermes_cli/web_dist/assets/index-DFQeXcPV.js                       1,908.94 kB │ gzip: 543.67 kB
+    
+    ✓ built in 1.05s
+    [plugin builtin:vite-reporter]
+    (!) Some chunks are larger than 500 kB after minification. Consider:
+    - Using dynamic import() to code-split the application
+    - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+    - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+  ✓ Web UI built
+
+✓ Code updated!
+  ✓ Model catalog cache refreshed from checkout
+
+→ Syncing bundled skills...
+  ↑ 1 updated: hermes-agent
+
+→ Syncing bundled skills to all profiles...
+  default: up to date
+
+→ Checking configuration for new options...
+  ✓ Configuration is up to date
+
+✓ Update complete!
+
+Tip: You can now select a provider and model:
+  hermes model              # Select provider and model
+
+=== hermes update started 2026-06-27T14:38:20 ===
+⚕ Updating Hermes Agent...
+
+→ Fetching updates...
+→ Found 82 new commit(s)
+  ✓ Pre-update snapshot: 20260627-090825-pre-update
+→ Pulling updates...
+  ✓ Cleared 94 stale __pycache__ directories
+→ Updating Python dependencies...
+
+→ Refreshing 11 active lazy backend(s)...
+  ✓ 11 already current
+→ Updating Node.js dependencies...
+  ✓ repo root + ui-tui, web workspaces (desktop skipped)
+→ Building web UI...
+    
+    > web@0.0.0 build
+    > tsc -b && vite build
+    
+    vite v8.1.0 building client environment for production...
+    [2K
+    transforming...✓ 480 modules transformed.
+    rendering chunks...
+    computing gzip size...
+    ../hermes_cli/web_dist/index.html                                         0.51 kB │ gzip:   0.32 kB
+    ../hermes_cli/web_dist/assets/Mondwest-Regular-CWscgue7.woff2            23.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Regular-l8uVympt.woff2       33.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Bold-DZA7s8Pa.woff2          35.01 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Regular-BSXFyF4x.woff2     37.76 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Medium-CA76_CrB.woff2      38.84 kB
+    ../hermes_cli/web_dist/assets/Collapse-Bold-mgICk9-_.woff2               59.14 kB
+    ../hermes_cli/web_dist/assets/Collapse-Regular-DysayoTY.woff2            62.81 kB
+    ../hermes_cli/web_dist/assets/filler-bg0-DxMaWJpb.webp                  185.27 kB
+    ../hermes_cli/web_dist/assets/index-Bq6BJgNT.css                        110.70 kB │ gzip:  17.65 kB
+    ../hermes_cli/web_dist/assets/index-Bg6G1DAq.js                       1,909.08 kB │ gzip: 543.71 kB
+    
+    [plugin builtin:vite-reporter]
+    (!) Some chunks are larger than 500 kB after minification. Consider:
+    - Using dynamic import() to code-split the application
+    - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+    - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+    ✓ built in 931ms
+  ✓ Web UI built
+
+✓ Code updated!
+  ✓ Model catalog cache refreshed from checkout
+
+→ Syncing bundled skills...
+  ✓ Skills are up to date
+
+→ Syncing bundled skills to all profiles...
+  default: up to date
+
+→ Checking configuration for new options...
+  ✓ Configuration is up to date
+
+✓ Update complete!
+
+Tip: You can now select a provider and model:
+  hermes model              # Select provider and model
+
+=== hermes update started 2026-06-27T21:48:39 ===
+⚕ Updating Hermes Agent...
+
+→ Discarded npm lockfile churn (1 file(s))
+→ Fetching updates...
+→ Found 54 new commit(s)
+  ✓ Pre-update snapshot: 20260627-161844-pre-update
+→ Pulling updates...
+  ✓ Cleared 94 stale __pycache__ directories
+→ Updating Python dependencies...
+
+→ Refreshing 11 active lazy backend(s)...
+  ✓ 11 already current
+→ Updating Node.js dependencies...
+  ✓ repo root + ui-tui, web workspaces (desktop skipped)
+→ Building web UI...
+    
+    > web@0.0.0 build
+    > tsc -b && vite build
+    
+    vite v8.1.0 building client environment for production...
+    [2K
+    transforming...✓ 481 modules transformed.
+    rendering chunks...
+    computing gzip size...
+    ../hermes_cli/web_dist/index.html                                         0.51 kB │ gzip:   0.32 kB
+    ../hermes_cli/web_dist/assets/Mondwest-Regular-CWscgue7.woff2            23.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Regular-l8uVympt.woff2       33.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Bold-DZA7s8Pa.woff2          35.01 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Regular-BSXFyF4x.woff2     37.76 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Medium-CA76_CrB.woff2      38.84 kB
+    ../hermes_cli/web_dist/assets/Collapse-Bold-mgICk9-_.woff2               59.14 kB
+    ../hermes_cli/web_dist/assets/Collapse-Regular-DysayoTY.woff2            62.81 kB
+    ../hermes_cli/web_dist/assets/filler-bg0-DxMaWJpb.webp                  185.27 kB
+    ../hermes_cli/web_dist/assets/index-Bq6BJgNT.css                        110.70 kB │ gzip:  17.65 kB
+    ../hermes_cli/web_dist/assets/index-6voxfvAy.js                       1,914.86 kB │ gzip: 545.39 kB
+    
+    [plugin builtin:vite-reporter]
+    (!) Some chunks are larger than 500 kB after minification. Consider:
+    - Using dynamic import() to code-split the application
+    - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+    - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+    ✓ built in 1.18s
+  ✓ Web UI built
+
+✓ Code updated!
+  ✓ Model catalog cache refreshed from checkout
+
+→ Syncing bundled skills...
+  ↑ 1 updated: hermes-agent
+
+→ Syncing bundled skills to all profiles...
+  default: up to date
+
+→ Checking configuration for new options...
+  ✓ Configuration is up to date
+
+✓ Update complete!
+
+Tip: You can now select a provider and model:
+  hermes model              # Select provider and model
+
+=== hermes update started 2026-06-28T13:33:44 ===
+⚕ Updating Hermes Agent...
+
+→ Discarded npm lockfile churn (1 file(s))
+→ Fetching updates...
+→ Found 102 new commit(s)
+  ✓ Pre-update snapshot: 20260628-080354-pre-update
+→ Pulling updates...
+  ✓ Cleared 94 stale __pycache__ directories
+→ Updating Python dependencies...
+
+→ Refreshing 11 active lazy backend(s)...
+  ✓ 11 already current
+→ Updating Node.js dependencies...
+  ✓ repo root + ui-tui, web workspaces (desktop skipped)
+→ Building web UI...
+    
+    > web@0.0.0 build
+    > tsc -b && vite build
+    
+    vite v8.1.0 building client environment for production...
+    [2K
+    transforming...✓ 481 modules transformed.
+    rendering chunks...
+    computing gzip size...
+    ../hermes_cli/web_dist/index.html                                         0.51 kB │ gzip:   0.32 kB
+    ../hermes_cli/web_dist/assets/Mondwest-Regular-CWscgue7.woff2            23.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Regular-l8uVympt.woff2       33.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Bold-DZA7s8Pa.woff2          35.01 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Regular-BSXFyF4x.woff2     37.76 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Medium-CA76_CrB.woff2      38.84 kB
+    ../hermes_cli/web_dist/assets/Collapse-Bold-mgICk9-_.woff2               59.14 kB
+    ../hermes_cli/web_dist/assets/Collapse-Regular-DysayoTY.woff2            62.81 kB
+    ../hermes_cli/web_dist/assets/filler-bg0-DxMaWJpb.webp                  185.27 kB
+    ../hermes_cli/web_dist/assets/index-Bq6BJgNT.css                        110.70 kB │ gzip:  17.65 kB
+    ../hermes_cli/web_dist/assets/index-6voxfvAy.js                       1,914.86 kB │ gzip: 545.39 kB
+    
+    [plugin builtin:vite-reporter]
+    (!) Some chunks are larger than 500 kB after minification. Consider:
+    - Using dynamic import() to code-split the application
+    - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+    - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+    ✓ built in 1.24s
+  ✓ Web UI built
+
+✓ Code updated!
+  ✓ Model catalog cache refreshed from checkout
+
+→ Syncing bundled skills...
+  ✓ Skills are up to date
+
+→ Syncing bundled skills to all profiles...
+  default: up to date
+
+→ Checking configuration for new options...
+
+  ℹ Updating config format (v30 → v31)…
+  ✓ Config format updated (no new settings to configure)
+
+✓ Update complete!
+
+Tip: You can now select a provider and model:
+  hermes model              # Select provider and model
+
+=== hermes update started 2026-06-28T23:26:46 ===
+⚕ Updating Hermes Agent...
+
+→ Discarded npm lockfile churn (1 file(s))
+→ Fetching updates...
+→ Found 107 new commit(s)
+  ✓ Pre-update snapshot: 20260628-175659-pre-update
+→ Pulling updates...
+  ✓ Cleared 94 stale __pycache__ directories
+→ Updating Python dependencies...
+
+→ Refreshing 12 active lazy backend(s)...
+  ✓ 12 already current
+→ Updating Node.js dependencies...
+  ✓ repo root + ui-tui, web workspaces (desktop skipped)
+→ Building web UI...
+    
+    > web@0.0.0 build
+    > tsc -b && vite build
+    
+    vite v8.1.0 building client environment for production...
+    [2K
+    transforming...✓ 481 modules transformed.
+    rendering chunks...
+    computing gzip size...
+    ../hermes_cli/web_dist/index.html                                         0.51 kB │ gzip:   0.32 kB
+    ../hermes_cli/web_dist/assets/Mondwest-Regular-CWscgue7.woff2            23.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Regular-l8uVympt.woff2       33.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Bold-DZA7s8Pa.woff2          35.01 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Regular-BSXFyF4x.woff2     37.76 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Medium-CA76_CrB.woff2      38.84 kB
+    ../hermes_cli/web_dist/assets/Collapse-Bold-mgICk9-_.woff2               59.14 kB
+    ../hermes_cli/web_dist/assets/Collapse-Regular-DysayoTY.woff2            62.81 kB
+    ../hermes_cli/web_dist/assets/filler-bg0-DxMaWJpb.webp                  185.27 kB
+    ../hermes_cli/web_dist/assets/index-Bq6BJgNT.css                        110.70 kB │ gzip:  17.65 kB
+    ../hermes_cli/web_dist/assets/index-6voxfvAy.js                       1,914.86 kB │ gzip: 545.39 kB
+    
+    [plugin builtin:vite-reporter]
+    (!) Some chunks are larger than 500 kB after minification. Consider:
+    - Using dynamic import() to code-split the application
+    - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+    - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+    ✓ built in 1.18s
+  ✓ Web UI built
+
+✓ Code updated!
+  ✓ Model catalog cache refreshed from checkout
+
+→ Syncing bundled skills...
+  ✓ Skills are up to date
+
+→ Syncing bundled skills to all profiles...
+  default: up to date
+
+→ Checking configuration for new options...
+  ✓ Configuration is up to date
+
+✓ Update complete!
+
+Tip: You can now select a provider and model:
+  hermes model              # Select provider and model
+
+=== hermes update started 2026-07-02T09:20:56 ===
+⚕ Updating Hermes Agent...
+
+→ Discarded npm lockfile churn (1 file(s))
+→ Fetching updates...
+→ Found 785 new commit(s)
+  ✓ Pre-update snapshot: 20260702-035108-pre-update
+→ Pulling updates...
+  ✓ Cleared 95 stale __pycache__ directories
+→ Updating Python dependencies...
+
+→ Refreshing 16 active lazy backend(s)...
+  ↑ 3 refreshed: provider.vertex, platform.discord, platform.matrix
+  ✓ 13 already current
+→ Updating Node.js dependencies...
+  ✓ repo root + ui-tui, web workspaces (desktop skipped)
+→ Building web UI...
+    
+    > web@0.0.0 build
+    > tsc -b && vite build
+    
+    vite v8.1.0 building client environment for production...
+    [2K
+    transforming...✓ 481 modules transformed.
+    rendering chunks...
+    computing gzip size...
+    ../hermes_cli/web_dist/index.html                                         0.51 kB │ gzip:   0.32 kB
+    ../hermes_cli/web_dist/assets/Mondwest-Regular-CWscgue7.woff2            23.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Regular-l8uVympt.woff2       33.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Bold-DZA7s8Pa.woff2          35.01 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Regular-BSXFyF4x.woff2     37.76 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Medium-CA76_CrB.woff2      38.84 kB
+    ../hermes_cli/web_dist/assets/Collapse-Bold-mgICk9-_.woff2               59.14 kB
+    ../hermes_cli/web_dist/assets/Collapse-Regular-DysayoTY.woff2            62.81 kB
+    ../hermes_cli/web_dist/assets/index-OT1jQL5E.css                        111.82 kB │ gzip:  17.74 kB
+    ../hermes_cli/web_dist/assets/index-WrAtZQWO.js                       1,928.79 kB │ gzip: 548.68 kB
+    
+    ✓ built in 1.10s
+    [plugin builtin:vite-reporter]
+    (!) Some chunks are larger than 500 kB after minification. Consider:
+    - Using dynamic import() to code-split the application
+    - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+    - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+  ✓ Web UI built
+
+✓ Code updated!
+  ✓ Model catalog cache refreshed from checkout
+
+→ Syncing bundled skills...
+  ↑ 3 updated: research-paper-writing, hermes-agent, claude-design
+
+→ Syncing bundled skills to all profiles...
+  default: up to date
+
+→ Checking configuration for new options...
+  ✓ Configuration is up to date
+
+✓ Update complete!
+  → hermes-gateway: draining (up to 195s)...
+
+  ✓ Restarted hermes-gateway
+
+Tip: You can now select a provider and model:
+  hermes model              # Select provider and model
+
+=== hermes update started 2026-07-02T21:57:51 ===
+⚕ Updating Hermes Agent...
+
+→ Discarded npm lockfile churn (1 file(s))
+→ Fetching updates...
+→ Found 50 new commit(s)
+  ✓ Pre-update snapshot: 20260702-162757-pre-update
+→ Pulling updates...
+  ✓ Cleared 96 stale __pycache__ directories
+→ Updating Python dependencies...
+
+→ Refreshing 16 active lazy backend(s)...
+  ✓ 16 already current
+→ Updating Node.js dependencies...
+  ✓ repo root + ui-tui, web workspaces (desktop skipped)
+→ Building web UI...
+    
+    > web@0.0.0 build
+    > tsc -b && vite build
+    
+    vite v8.1.0 building client environment for production...
+    [2K
+    transforming...✓ 481 modules transformed.
+    rendering chunks...
+    computing gzip size...
+    ../hermes_cli/web_dist/index.html                                         0.51 kB │ gzip:   0.32 kB
+    ../hermes_cli/web_dist/assets/Mondwest-Regular-CWscgue7.woff2            23.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Regular-l8uVympt.woff2       33.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Bold-DZA7s8Pa.woff2          35.01 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Regular-BSXFyF4x.woff2     37.76 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Medium-CA76_CrB.woff2      38.84 kB
+    ../hermes_cli/web_dist/assets/Collapse-Bold-mgICk9-_.woff2               59.14 kB
+    ../hermes_cli/web_dist/assets/Collapse-Regular-DysayoTY.woff2            62.81 kB
+    ../hermes_cli/web_dist/assets/index-OT1jQL5E.css                        111.82 kB │ gzip:  17.74 kB
+    ../hermes_cli/web_dist/assets/index-WrAtZQWO.js                       1,928.79 kB │ gzip: 548.68 kB
+    
+    ✓ built in 1.20s
+    [plugin builtin:vite-reporter]
+    (!) Some chunks are larger than 500 kB after minification. Consider:
+    - Using dynamic import() to code-split the application
+    - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+    - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+  ✓ Web UI built
+
+✓ Code updated!
+  ✓ Model catalog cache refreshed from checkout
+
+→ Syncing bundled skills...
+  ✓ Skills are up to date
+
+→ Syncing bundled skills to all profiles...
+  default: up to date
+
+→ Checking configuration for new options...
+
+  ℹ Updating config format (v31 → v32)…
+  ✓ Config format updated (no new settings to configure)
+
+✓ Update complete!
+  → hermes-gateway: draining (up to 195s)...
+
+  ✓ Restarted hermes-gateway
+
+Tip: You can now select a provider and model:
+  hermes model              # Select provider and model
+
+=== hermes update started 2026-07-03T19:42:35 ===
+⚕ Updating Hermes Agent...
+
+→ Discarded npm lockfile churn (1 file(s))
+→ Fetching updates...
+→ Found 108 new commit(s)
+  ✓ Pre-update snapshot: 20260703-141240-pre-update
+→ Pulling updates...
+  ✓ Cleared 96 stale __pycache__ directories
+→ Updating Python dependencies...
+
+→ Refreshing 16 active lazy backend(s)...
+  ✓ 16 already current
+→ Updating Node.js dependencies...
+  ✓ repo root + ui-tui, web workspaces (desktop skipped)
+→ Building web UI...
+    
+    > web@0.0.0 build
+    > tsc -b && vite build
+    
+    vite v8.1.0 building client environment for production...
+    [2K
+    transforming...✓ 481 modules transformed.
+    rendering chunks...
+    computing gzip size...
+    ../hermes_cli/web_dist/index.html                                         0.51 kB │ gzip:   0.32 kB
+    ../hermes_cli/web_dist/assets/Mondwest-Regular-CWscgue7.woff2            23.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Regular-l8uVympt.woff2       33.82 kB
+    ../hermes_cli/web_dist/assets/RulesExpanded-Bold-DZA7s8Pa.woff2          35.01 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Regular-BSXFyF4x.woff2     37.76 kB
+    ../hermes_cli/web_dist/assets/RulesCompressed-Medium-CA76_CrB.woff2      38.84 kB
+    ../hermes_cli/web_dist/assets/Collapse-Bold-mgICk9-_.woff2               59.14 kB
+    ../hermes_cli/web_dist/assets/Collapse-Regular-DysayoTY.woff2            62.81 kB
+    ../hermes_cli/web_dist/assets/index-OT1jQL5E.css                        111.82 kB │ gzip:  17.74 kB
+    ../hermes_cli/web_dist/assets/index-WrAtZQWO.js                       1,928.79 kB │ gzip: 548.68 kB
+    
+    [plugin builtin:vite-reporter]
+    (!) Some chunks are larger than 500 kB after minification. Consider:
+    - Using dynamic import() to code-split the application
+    - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+    - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+    ✓ built in 1.42s
+  ✓ Web UI built
+
+✓ Code updated!
+  ✓ Model catalog cache refreshed from checkout
+
+→ Syncing bundled skills...
+  ✓ Skills are up to date
+
+→ Syncing bundled skills to all profiles...
+  default: up to date
+
+→ Checking configuration for new options...
+
+  ℹ Updating config format (v32 → v33)…
+  ✓ Config format updated (no new settings to configure)
+
+✓ Update complete!
+  → hermes-gateway: draining (up to 195s)...
+
+  ✓ Restarted hermes-gateway
+
+Tip: You can now select a provider and model:
+  hermes model              # Select provider and model

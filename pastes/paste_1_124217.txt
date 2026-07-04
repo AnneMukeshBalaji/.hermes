@@ -1,0 +1,7 @@
+❯ pwd
+/home/luffy/Documents/SpringBoot/tasktracker
+❯ ls
+ .mvn  󰊢 .gitattributes   HELP.md   mvnw.cmd
+󰣞 src   󰊢 .gitignore      󰡯 mvnw      pom.xml
+~/Documents/SpringBoot/tasktracker                                                           
+❯

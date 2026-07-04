@@ -1,0 +1,63 @@
+ sudo pacman -S obsidian
+[sudo] password for luffy: 
+resolving dependencies...
+looking for conflicting packages...
+
+Package (4)       New Version  Net Change  Download Size
+
+extra/c-ares      1.34.6-1       0.51 MiB               
+extra/electron39  39.8.10-1    280.69 MiB               
+core/minizip      1:1.3.2-3      0.10 MiB               
+extra/obsidian    1.12.7-2      23.19 MiB       6.18 MiB
+
+Total Download Size:     6.18 MiB
+Total Installed Size:  304.48 MiB
+
+:: Proceed with installation? [Y/n] yt
+❯ sudo pacman -S obsidian
+resolving dependencies...
+looking for conflicting packages...
+
+Package (4)       New Version  Net Change  Download Size
+
+extra/c-ares      1.34.6-1       0.51 MiB               
+extra/electron39  39.8.10-1    280.69 MiB               
+core/minizip      1:1.3.2-3      0.10 MiB               
+extra/obsidian    1.12.7-2      23.19 MiB       6.18 MiB
+
+Total Download Size:     6.18 MiB
+Total Installed Size:  304.48 MiB
+
+:: Proceed with installation? [Y/n] y
+:: Retrieving packages...
+ obsidian-1.12.7-2-x86_64      6.2 MiB  2.39 MiB/s 00:03 [------------------------------] 100%
+error: failed retrieving file 'obsidian-1.12.7-2-x86_64.pkg.tar.zst' from fastly.mirror.pkgbuild.com : The requested URL returned error: 404
+error: failed retrieving file 'obsidian-1.12.7-2-x86_64.pkg.tar.zst' from geo.mirror.pkgbuild.com : The requested URL returned error: 404
+error: failed retrieving file 'obsidian-1.12.7-2-x86_64.pkg.tar.zst' from ftpmirror.infania.net : The requested URL returned error: 404
+error: failed retrieving file 'obsidian-1.12.7-2-x86_64.pkg.tar.zst' from mirror.rackspace.com : The requested URL returned error: 404
+error: failed retrieving file 'obsidian-1.12.7-2-x86_64.pkg.tar.zst' from al.arch.niranjan.co : The requested URL returned error: 404
+error: failed retrieving file 'obsidian-1.12.7-2-x86_64.pkg.tar.zst' from mirrors.teamcloud.am : The requested URL returned error: 404
+error: failed retrieving file 'obsidian-1.12.7-2-x86_64.pkg.tar.zst' from mirror.aarnet.edu.au : The requested URL returned error: 404
+(4/4) checking keys in keyring                           [------------------------------] 100%
+(4/4) checking package integrity                         [------------------------------] 100%
+(4/4) loading package files                              [------------------------------] 100%
+(4/4) checking for file conflicts                        [------------------------------] 100%
+(4/4) checking available disk space                      [------------------------------] 100%
+:: Processing package changes...
+(1/4) installing c-ares                                  [------------------------------] 100%
+(2/4) installing minizip                                 [------------------------------] 100%
+(3/4) installing electron39                              [------------------------------] 100%
+Optional dependencies for electron39
+    kde-cli-tools: file deletion support (kioclient5)
+    pipewire: WebRTC desktop sharing under Wayland [installed]
+    qt5-base: enable Qt5 with --enable-features=AllowQt [installed]
+    gtk4: for --gtk-version=4 (GTK4 IME might work better on Wayland) [installed]
+    trash-cli: file deletion support (trash-put)
+    xdg-utils: open URLs with desktop’s default (xdg-email, xdg-open) [installed]
+(4/4) installing obsidian                                [------------------------------] 100%
+You can add custom permanent flags for Obsidian in .config/obsidian/user-flags.conf
+:: Running post-transaction hooks...
+(1/2) Arming ConditionNeedsUpdate...
+(2/2) Updating the desktop file MIME type cache...
+~                                                                                         17s
+❯ 

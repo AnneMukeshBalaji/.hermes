@@ -1,0 +1,41 @@
+{
+  "updated_at": "2026-07-04T17:18:46.019882",
+  "platforms": {
+    "telegram": [
+      {
+        "id": "5539915160",
+        "name": "Mukesh Balaji",
+        "type": "dm",
+        "thread_id": null
+      }
+    ],
+    "discord": [],
+    "whatsapp": [],
+    "whatsapp_cloud": [],
+    "slack": [],
+    "signal": [],
+    "mattermost": [],
+    "matrix": [],
+    "homeassistant": [],
+    "email": [],
+    "sms": [],
+    "dingtalk": [],
+    "msgraph_webhook": [],
+    "feishu": [],
+    "wecom": [],
+    "wecom_callback": [],
+    "weixin": [],
+    "bluebubbles": [],
+    "qqbot": [],
+    "yuanbao": [],
+    "relay": [],
+    "google_chat": [],
+    "irc": [],
+    "line": [],
+    "ntfy": [],
+    "photon": [],
+    "raft": [],
+    "simplex": [],
+    "teams": []
+  }
+}

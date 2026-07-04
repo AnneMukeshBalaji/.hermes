@@ -1,0 +1,8 @@
+❯ "==> != <= >= ->"
+zsh: command not found: ==> != <= >= ->
+❯ echo "==> != <= >= ->"
+==> != <= >= ->
+❯ =>
+zsh: parse error near `\n'
+~
+❯

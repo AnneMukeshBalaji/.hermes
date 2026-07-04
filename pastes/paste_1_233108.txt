@@ -1,0 +1,40 @@
+package com.management.usermanagementAPI.exception;
+
+import java.time.LocalDateTime;
+
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import com.management.usermanagementAPI.dto.ErrorResponse;
+
+import jakarta.validation.ValidationException;
+
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+  @ExceptionHandler(ResourceConflictException.class)
+  public ErrorResponse handleResourceConflictException(ResourceConflictException exception) {
+    ErrorResponse response = new ErrorResponse();
+    response.setStatus(409);
+    response.setError(exception.getMessage());
+    response.setErrorTime(LocalDateTime.now());
+    return response;
+  }
+
+  @ExceptionHandler(ResourceNotFoundException.class)
+  public ErrorResponse handleResourceNotFoundException(ResourceNotFoundException exception) {
+    ErrorResponse response = new ErrorResponse();
+    response.setError(exception.getMessage());
+    response.setStatus(404);
+    response.setErrorTime(LocalDateTime.now());
+    return response;
+  }
+
+  @ExceptionHandler(ValidationException.class)
+  public ErrorResponse handleValidationError(ValidationException exception) {
+    ErrorResponse response = new ErrorResponse();
+    response.setStatus(400);
+    response.setError(exception.getMessage());
+    response.setErrorTime(LocalDateTime.now());
+    return response;
+  }
+}

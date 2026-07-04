@@ -1,0 +1,35 @@
+ hermes whatsapp-cloud
+
+⚕ WhatsApp Business Cloud API Setup
+==================================================
+
+This wizard configures Hermes to talk to WhatsApp via Meta's
+official Cloud API. It's the production-grade path:
+
+  • No QR codes, no Node.js bridge subprocess
+  • Stable connection — no account-ban risk
+  • Business account required (not personal WhatsApp)
+  • Public webhook URL required (Cloudflare Tunnel, ngrok,
+    or your own reverse proxy with TLS)
+
+If you don't have a Meta app set up yet, follow these steps
+FIRST, then come back and re-run this wizard:
+
+  1. https://developers.facebook.com/apps → Create App
+     → 'Connect with customers through WhatsApp'
+  2. App Dashboard → WhatsApp → API Setup
+  3. Click 'Generate access token' (temp 24h token is fine to
+     start; switch to a System User permanent token later)
+
+Press Enter to continue, or Ctrl+C to abort... 
+
+──────────────────────────────────────────────────
+STEP 1 — Phone Number ID
+──────────────────────────────────────────────────
+  Found in: App Dashboard → WhatsApp → API Setup, in the
+  'Send and receive messages' section.
+  Look BELOW the 'From' dropdown — there's a 'Phone number ID'
+  line with the value (15-17 digits, e.g. '7794189252778687').
+  It is NOT the phone number itself (+1 555-...). That's the
+  single most common setup mistake.
+  → Phone Number ID: 

@@ -1,0 +1,2 @@
+{"path": "/home/luffy/.hermes/spawn-trees/2171e44e/20260629T112255.json", "session_id": "2171e44e", "started_at": 1782732170.377, "finished_at": 1782732175.053, "label": "Restart the Hermes gateway service", "count": 1}
+{"path": "/home/luffy/.hermes/spawn-trees/2171e44e/20260629T112821.json", "session_id": "2171e44e", "started_at": 1782732496.42, "finished_at": 1782732501.698, "label": "Restart the Hermes gateway: systemctl --user daemon-reload && systemctl --user restart hermes-gateway, then verify with ", "count": 1}

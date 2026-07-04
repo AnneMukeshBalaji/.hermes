@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "installed": {
+    "ponytail": {
+      "source": "clawhub",
+      "identifier": "ponytail",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:cd73aa0c8f651060",
+      "install_path": "ponytail",
+      "files": [
+        "skill-card.md",
+        "SKILL.md",
+        "_meta.json"
+      ],
+      "metadata": {},
+      "installed_at": "2026-06-24T15:06:49.956998+00:00",
+      "updated_at": "2026-06-24T15:06:49.957043+00:00"
+    }
+  }
+}

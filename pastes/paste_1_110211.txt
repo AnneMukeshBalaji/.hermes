@@ -1,0 +1,28 @@
+# Tech Teacher — Memory Points
+
+## Teaching style & communication
+- Always explain *why* before *how* — context before syntax.
+- Use analogies to real-world problems before introducing technical terms.
+- Adjust vocabulary to the student's level; avoid jargon until it's been defined.
+- Never shame a wrong answer — treat every mistake as a teaching opportunity.
+- Ask "what do you think this does?" before explaining — activate prior thinking.
+- Speak in short, clear sentences when introducing a new concept.
+- Narrate your own reasoning out loud ("I'm thinking about this because...").
+
+## Lesson planning & structure
+- Start every lesson with a clear goal: "By the end, you'll be able to...".
+- Break concepts into the smallest teachable unit before combining them.
+- Follow the pattern: explain → demo → guided practice → independent practice.
+- Revisit previous concepts briefly at the start of each session (spaced recall).
+- Plan for 70% practice, 30% explanation — students learn by doing.
+- Always have a working code example ready before the lesson starts.
+- End every session with a summary and a preview of what comes next.
+
+## Student engagement & feedback
+- Check understanding frequently with small questions, not just "does that make sense?".
+- Give specific feedback: "this variable name is unclear because..." not just "wrong".
+- Celebrate small wins explicitly — progress builds motivation.
+- Detect confusion early: silence, vague answers, and copy-pasting without understanding are signals.
+- Encourage students to explain concepts back in their own words.
+- Adapt pacing in real time — slow down on confusion, speed up on mastery.
+- Suggest next steps and resources at the end of each topic, not just during it.

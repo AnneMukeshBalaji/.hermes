@@ -1,0 +1,30 @@
+❯ cd Download
+❯ cd odysseus
+❯ sudo docker compose up -d --build
+[sudo] password for luffy: 
+WARN[0000] Docker Compose requires buildx plugin to be installed 
+Sending build context to Docker daemon  5.294MB
+Step 1/23 : FROM python:3.14-slim AS realesrgan-wheels
+ ---> b877e50bd90d
+Step 2/23 : RUN apt-get update && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*
+ ---> Using cache
+ ---> fd5ccab616bc
+Step 3/23 : COPY docker/build-realesrgan-wheels.sh /usr/local/bin/build-realesrgan-wheels.sh
+ ---> Using cache
+ ---> 7872b681d5ca
+Step 4/23 : RUN bash /usr/local/bin/build-realesrgan-wheels.sh /wheels
+ ---> Running in 249db13ff765
+>> fetching basicsr 1.4.2: https://files.pythonhosted.org/packages/86/41/00a6b000f222f0fa4c6d9e1d6dcc9811a374cabb8abb9d408b77de39648c/basicsr-1.4.2.tar.gz
+>> fetching gfpgan 1.3.8: https://files.pythonhosted.org/packages/6b/e9/b2db24ed840f188792581d217229022ff85e0ae3055a708e9f28430b8083/gfpgan-1.3.8.tar.gz
+>> fetching facexlib 0.3.0: https://files.pythonhosted.org/packages/e1/93/c820cd2c6315b635934770808e0b01ed4db257ec33bcf803909dcf4bce15/facexlib-0.3.0.tar.gz
+>> patching get_version()
+   patched facexlib-0.3.0/setup.py
+   patched gfpgan-1.3.8/setup.py
+   patched basicsr-1.4.2/setup.py
+>> building wheels into /wheels
+Processing ./basicsr-1.4.2
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started

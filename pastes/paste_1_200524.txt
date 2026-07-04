@@ -1,0 +1,13 @@
+❯ create-spring-project
+Project Name (default: demo): backend
+Group ID (default: com.example): com.chatApplication
+Java Version (default: 17): 25
+Fetching dependencies from start.spring.io...
+Search and select dependencies (use TAB to select multiple, ENTER to confirm)...
+Selected dependencies: web,data-jpa,postgresql,websocket,security,lombok
+Downloading project backend...
+Project created successfully in ./backend/!
+❯ pwd
+/home/luffy/Desktop/backend
+~/Desktop/backend                                                                            
+❯ 

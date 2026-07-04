@@ -1,0 +1,51 @@
+ckage com.chatApplication.backend.security;
+
+import java.util.Date;
+import java.util.UUID;
+
+import javax.crypto.SecretKey;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtParser;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
+import jakarta.annotation.PostConstruct;
+
+@Service
+public class JwtService {
+  @Value("${app.jwt.secret}")
+  private String secretString;
+  @Value("${app.jwt.expiration-ms}")
+  private long expirationMs;
+  private SecretKey secretKey; 
+  @PostConstruct
+  public void init(){
+    byte [] Bytes = Decoders.BASE64.decode(secretString);
+    this.secretKey = Keys.hmacShaKeyFor(Bytes);
+  }
+
+  public String generateJWTToken(UUID userId,String userName){
+    return Jwts.builder()
+      .subject(userId.toString())
+      .claim("userName", userName)
+      .issuedAt(new Date())
+      .expiration(new Date(System.currentTimeMillis() + expirationMs))
+      .signWith(secretKey)
+      .compact();
+  }
+
+  // NOTE: parsing and extracting userId from the JWT Token 
+  public UUID getUserId(String token){
+    // NOTE: To verify the JWT Token and to get the payload [request body ] from the JWT Token we need a parser
+    JwtParser parser = Jwts.parser().verifyWith(secretKey).build();
+    // NOTE: Use This parser to verify the Token  and get the Payload 
+    Claims userIdClaim = parser.parseSignedClaims(token).getPayload();
+   // NOTE: Since the token contains UserID everytime
+    String userIdstr = userIdClaim.getSubject();
+    return UUID.fromString(userIdstr);
+  }
+}
